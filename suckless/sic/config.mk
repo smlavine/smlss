@@ -4,8 +4,8 @@ VERSION = 1.3
 # Customize below to fit your system
 
 # paths
-PREFIX = .
-MANPREFIX = /usr/local/share/man
+PREFIX = ~/.local
+MANPREFIX = ${PREFIX}/share/man
 
 # includes and libs
 INCS = -I. -I/usr/include
