@@ -1,0 +1,58 @@
+# sic - simple irc client
+
+include config.mk
+
+SRC = sic.c
+OBJ = ${SRC:.c=.o}
+
+all: options sic
+
+options:
+	@echo sic build options:
+	@echo "CFLAGS   = ${CFLAGS}"
+	@echo "LDFLAGS  = ${LDFLAGS}"
+	@echo "CC       = ${CC}"
+
+.c.o:
+	@echo CC $<
+	@${CC} -c ${CFLAGS} $<
+
+${OBJ}: config.h config.mk strlcpy.c util.c
+
+config.h:
+	@echo creating $@ from config.def.h
+	@cp config.def.h $@
+
+sic: ${OBJ}
+	@echo CC -o $@
+	@${CC} -o $@ ${OBJ} ${LDFLAGS}
+
+clean:
+	@echo cleaning
+	@rm -f sic ${OBJ} sic-${VERSION}.tar.gz
+
+dist: clean
+	@echo creating dist tarball
+	@mkdir -p sic-${VERSION}
+	@cp -R LICENSE Makefile README arg.h config.def.h config.mk sic.1 sic.c util.c strlcpy.c sic-${VERSION}
+	@tar -cf sic-${VERSION}.tar sic-${VERSION}
+	@gzip sic-${VERSION}.tar
+	@rm -rf sic-${VERSION}
+
+install: all
+	#@echo installing executable file to ${DESTDIR}${PREFIX}
+	#@mkdir -p ${DESTDIR}${PREFIX}
+	#@cp -f sic ${DESTDIR}${PREFIX}
+	#@chmod 755 ${DESTDIR}${PREFIX}/sic
+	@echo installing manual page to ${DESTDIR}${MANPREFIX}/man1
+	@mkdir -p ${DESTDIR}${MANPREFIX}/man1
+	@sed "s/VERSION/${VERSION}/g" < sic.1 > ${DESTDIR}${MANPREFIX}/man1/sic.1
+	@chmod 644 ${DESTDIR}${MANPREFIX}/man1/sic.1
+
+uninstall:
+	@echo removing executable file from ${DESTDIR}${PREFIX}
+	@rm -f ${DESTDIR}${PREFIX}/sic
+	@echo removing manual page from ${DESTDIR}${MANPREFIX}/man1
+	@rm -f ${DESTDIR}${MANPREFIX}/man1/sic.1
+
+.PHONY: all options clean dist install uninstall

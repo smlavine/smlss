@@ -1,0 +1,4 @@
+PATCHES:
+dmenu-border-4.9.diff
+dmenu-center-20191105-f1ca0d0.diff
+dmenu-xyw-4.7.diff

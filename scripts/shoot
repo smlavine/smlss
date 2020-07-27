@@ -1,0 +1,47 @@
+#!/bin/sh
+# Copyright (C) 2019-2020 Sebastian LaVine <seblavine@outlook.com>
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# File:        shoot
+# Description: Saves a screenshot as PNG. Intended for use with a keybind.
+# Options:     -d                Prompts for filename with dmenu instead of
+#                                    using timestamp.
+
+# take picture as soon as possible
+file="$(mktemp)"
+xwd -root | convert xwd:- png:"$file"
+
+# read name from dmenu
+if [ "$1" = "-d" ]
+then
+	# read from /dev/null so that it doesn't block for input
+    name=$(dmenu -p "Name?" < /dev/null) 
+fi
+
+# either "-d" not used, OR dmenu cancelled out before input:
+# generate name based on time taken
+if [ "$name" = "" ]
+then
+	# example: "screenshot2019-11-17.948921698"
+	name="screenshot$(date '+%F.%N')"
+fi
+
+mv "$file" "$HOME/Documents/pictures/screenshots/$name.png"
+

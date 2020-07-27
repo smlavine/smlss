@@ -1,0 +1,2020 @@
+See README.md for info.
+
+commit c5a07cd4fd4bb566519d2d1ffeb9898cb6c55041
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Jul 27 13:57:26 2020 -0400
+
+    Added toggle-music-pause.sh, and added a keybinding for it to dwm
+
+commit 06c78c6226809e26f780e7cda0e397cbd95ef957
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Jul 27 13:48:06 2020 -0400
+
+    Re-added changes to README.md that were accidentally removed in last commit
+
+commit 07d913cf2a4d2ca93e626de6fc34aa6add1f4758
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Jul 27 13:28:05 2020 -0400
+
+    Simplified shell section in README.md
+
+commit c2dade914b9223c4374ca2c79cbdd695dc96d59b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Jul 27 13:23:35 2020 -0400
+
+    Updated the README to make me cringe less when I read it
+
+commit be70695511124c1049d4c8b973f85966fa5d919c
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Jul 27 12:42:49 2020 -0400
+
+    Added pianobar, and pianobar fifo file
+
+commit f673ee9a21950e5a8c1cb848c7b8137c1d7683d8
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Jul 27 12:38:13 2020 -0400
+
+    Deleted obsolete directory other-install/
+
+commit ce0423d0466aa5bad498d740351752aff7f91a5b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Jul 27 12:35:48 2020 -0400
+
+    Changed all paths to absolute paths, so that commands do not rely on being in a certain directory to function properly
+
+commit cddb049ce9d26396c61d258f161d1b353c99ae95
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Jun 26 21:59:17 2020 -0400
+
+    Now uses multiple greps to standardize order of items, and to stop accidentally reading info from the file name of the file playing
+
+commit 9424b5e0bfe655c29d394e043a78d09e69070d6d
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 25 15:10:56 2020 -0400
+
+    Re-added manual relative line toggle
+
+commit fa689c3525ed48a59b08f5769d0c5f084d4cdb36
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun May 24 11:40:48 2020 -0400
+
+    Added automatic toggle for relative number
+
+commit ae3ad2c2c3ea0a07b5944c4c169aad7502be5ea5
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat May 23 13:24:50 2020 -0400
+
+    Center window when going up/down a paragraph
+
+commit 3ae3dc3e83faee8ae78d8e1ccb119da5a2f61644
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri May 22 16:18:16 2020 -0400
+
+    Only startx if dwm is not running already - makes it easier to go into text mode in another tty
+
+commit 3ccca372775df96a0dfa6a98a743bbbe52f40271
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 18 16:54:42 2020 -0400
+
+    Added sum alias
+
+commit 049716f534a6aae1fde6021d0387fe1b725ccfab
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 18 16:52:57 2020 -0400
+
+    Streamlined python aliases
+
+commit 6308934cd71550daf492744a9dcf35b786957804
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed May 13 14:42:14 2020 -0400
+
+    Swapped order of options so that Duck is first, and default
+
+commit a692e5124bcbf13cf2716f229d3d6a01f1deb991
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed May 13 14:24:43 2020 -0400
+
+    Removed album and date information from printout
+
+commit f04c42722f1a926f108c812c70958bcff2ac02e0
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun May 10 02:46:37 2020 -0400
+
+    Added noborder patch to dwm
+
+commit 6786c448cf96bccdfd5ad2be4d1e4f9481f0b0e3
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed May 6 01:50:56 2020 -0400
+
+    Added delete-last-screenshot.sh and binding in dwm
+
+commit 93ea3f83282fb04a552305c5b9187084dfe08d2e
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed May 6 01:41:31 2020 -0400
+
+    Renamed last-screenshot.sh to view-last-screenshot.sh
+
+commit ee2ef9fd259e258b8e91a55cc47ef33b5eb8802e
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue May 5 18:24:58 2020 -0400
+
+    Removed patch remnant file
+
+commit afaefd4b55be3fbdee24501b3f440d73f89c05c7
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue May 5 18:24:36 2020 -0400
+
+    Removed massmove script, upon discovery of moreutil's vidir
+
+commit e078c7ec1fcd54c6773e4de40df03b78847404ad
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 4 13:27:13 2020 -0400
+
+    Removed old keybindings
+
+commit 519225066f68ad47cc11ea4fbc0b97a82a0b3ec2
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 4 13:26:08 2020 -0400
+
+    Added last-screenshot.sh and keybind
+
+commit b9fee7a7c34bd22b8258e2f6512c1de405e297ee
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 4 13:19:07 2020 -0400
+
+    Decreased default font size
+
+commit c4b5d582da0e7ce2e78776856fc49d7e2b895567
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 4 13:18:19 2020 -0400
+
+    Removed binary file sic from repo
+
+commit 762e0e75d7c2028b8d0646149be77c58d1faa552
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun May 3 19:20:24 2020 -0400
+
+    Changed terminal escape from being bound to escape, to swapping escape and terminal escape completely in terminal mode
+
+commit a1ddf53204551c3982207046fe2d376b8672a7ec
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun May 3 17:41:17 2020 -0400
+
+    Replaced .selected_editor with setting the EDITOR variable in .bashrc
+
+commit 0d2dd925fe625e289abf7978602bc13b95ae7b7c
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri May 1 11:14:35 2020 -0400
+
+    Removed dwm.c.orig and dwm.c.rej, residuals of patch files.
+
+commit 2c068a1c686e98f7ac2869a3c292d0ac43751ed4
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri May 1 11:13:06 2020 -0400
+
+    Updated dwm to version 6.2
+
+commit 1ee824a3dc09d1e236b93428cbfbdf98cc1a9812
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Apr 28 20:02:37 2020 -0400
+
+    Removed .wget-hsts, as should be a system-specific file, not a general dotfile
+
+commit 2ad6ef7350e72224d887be4975d03faaa4bd6330
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Mar 31 17:11:15 2020 -0400
+
+    Standardized '(C)' symbol, and updated copyright to new year
+
+commit a611706a86113466cd4f3bc997af6a2a580bac2b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Mar 31 17:08:13 2020 -0400
+
+    Removed search-ddg.sh
+
+commit 6472adc9d641cc28eb2c88d38d00342bc3f1c5bd
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Mar 31 17:07:03 2020 -0400
+
+    Added more comments and decreased verbosity
+
+commit 8a75ed26fb648d7204d520549cbeea10c3a88db4
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Mar 31 12:45:12 2020 -0400
+
+    Deleted 'Keep in mind that'
+
+commit f23de89a3c24163dcb4cc2bc6adfd63618383d46
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Mar 31 12:41:13 2020 -0400
+
+    Deleted orphan nvim/tmp link
+
+commit cd47cb070ac194c38368fd2f270b123351402b3c
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Mar 31 12:39:30 2020 -0400
+
+    Removed unused mpd dotfiles
+
+commit f0f7a7088f0b1855bfc1a1fb3b6f494d881b3b14
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Mar 31 12:37:38 2020 -0400
+
+    Changed neovim dotfiles to be neovim-centric instead of vim-centric, changed install location to .config/nvim instead of homedir, removed unused vim plugin scripts
+
+commit e7534212366aeae5efed941fac3d16923415fe36
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Mar 31 12:34:17 2020 -0400
+
+    Added new script
+
+commit 014a06a1d81962e05da4e4a21b914924f02ff1e8
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Mar 25 10:20:01 2020 -0400
+
+    Added ranger alias
+
+commit 7027948c2ec15b15cf0201ad4938fc8826896f0d
+Merge: c368ece 8598c29
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Mar 25 10:05:12 2020 -0400
+
+    Merge branch 'master' of https://gitlab.com/smlavine/smlss
+
+commit 8598c29a1818771aa6942b6baa1b17747e9d69c6
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Mar 22 13:26:07 2020 -0400
+
+    Removed dmenu-javadoc-lookup
+
+commit ba48af112ab4bdc6e50cdd937128a79de00906c7
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Mar 22 13:20:10 2020 -0400
+
+    Removed surf, vga-st
+
+commit ad10f884bb25926595e0f93ecb533b99b6c21f8f
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Mar 22 13:18:40 2020 -0400
+
+    Removed white-st
+
+commit 47c092f288b23ea79a95aa0aee39ba1a42741105
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Mar 22 13:15:05 2020 -0400
+
+    Removed installation of 6cord discord client
+
+commit c368ece0bbe449fbd325420c936640d2c08ae17f
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Mar 13 10:35:52 2020 -0400
+
+    'new' alias to make new terminal window
+
+commit 2c779e9759e136805cc78d1c542a54620072cb1f
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Feb 14 00:27:40 2020 -0500
+
+    Added support for vim-plug, as well as godot GDscript
+
+commit 5e65a76a5afecb858d2940afbe3e3c1b72973987
+Merge: d9ed877 8aa480d
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Jan 24 21:38:33 2020 -0500
+
+    Merge branch 'master' of https://gitlab.com/smlavine/smlss
+
+commit 8aa480d29c98d90af19391f719aa74bb0817569b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Jan 20 19:12:07 2020 -0500
+
+    Added 'py' alias for 'python'
+
+commit 0a73488965a03cec7d310b5d71ff54c63618f468
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jan 19 21:30:50 2020 -0500
+
+    Removed solarized colorscheme from nvim
+
+commit d9ed877ec4574275787a180a6e093dcc7c980f04
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jan 19 14:10:28 2020 -0500
+
+    Dracula diff
+
+commit 16a7b2e31e38f4ebcbd33e548108f9c538ce14da
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Jan 17 10:43:49 2020 -0500
+
+    Cleanup
+
+commit 569c6649c2eda3112b4eb6f3a5ba85202859f7d9
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Jan 16 20:44:25 2020 -0500
+
+    A space
+
+commit 1e6ddd5542850f7a7b1d35f8055ba0fc29fb7191
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Jan 16 10:51:06 2020 -0500
+
+    Removed Debian cruft, added git branch to PS1
+
+commit 723b3a7f4bab000b1db6e7ee154d4d406e06ac02
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jan 12 20:53:33 2020 -0500
+
+    Changed white-st to use solarized light colors
+
+commit 07c55d185d4ab5aef9f23100c4a77ceb4f1d64ae
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jan 5 13:20:55 2020 -0500
+
+    remove special AUR cases
+
+commit 517552c4452e7180525e667ff173b4f0404c8330
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jan 5 12:40:30 2020 -0500
+
+    Added dracula colorscheme
+
+commit 135baeb85f426d6ec548bc05b967e02e5f9e139b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jan 5 00:22:54 2020 -0500
+
+    tabspaces = 4
+
+commit c77963cbbe25e4b9f2c29c6f0d2c28fdaf31bd4f
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jan 5 00:21:41 2020 -0500
+
+    Swapped solarized light for default white-on-black theme
+
+commit f021b3f2565e8879d86aa74de613a69d34449a64
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Jan 4 23:22:23 2020 -0500
+
+    Removed extraneous 'sml'
+
+commit 1d1605addd46633359f5452c8e22b34e6e022955
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Jan 4 23:19:23 2020 -0500
+
+    Generalized homedir name
+
+commit b136bd50d619d6be78c7808e879c6fb47eefb8b4
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jan 1 14:25:58 2020 -0500
+
+    _ is not a keyword
+
+commit aa0e74b0eaa7bb930cd527d5275bbd62d55bea73
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jan 1 11:51:19 2020 -0500
+
+    Solarized st
+
+commit 74bf18da76f53ebce00579fff1bf72322e3c9bbf
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jan 1 11:45:00 2020 -0500
+
+    Solarized vim
+
+commit f9467033ddf7f910bcb86a6805683abf5f6258ea
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Dec 26 22:28:29 2019 -0500
+
+    Increased default font size to 18px
+
+commit 1a16031f0857936a20452135d284ca88eaaeff95
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Dec 25 16:11:31 2019 -0500
+
+    Added better indentation for javascript embedded in html
+
+commit bdca7530477e7d50ec13ce78bb569eb1644c1d0d
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Dec 22 17:29:06 2019 -0500
+
+    Recommend --depth=1
+
+commit ea7ae099be0bc92dd0f4377cbb02b21641e2b050
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Dec 22 17:26:10 2019 -0500
+
+    Cleaned up some loose ends with surf
+
+commit cdd9e6787b7b7f202b81605d6ca7dd78941cbd42
+Merge: 5c3593f a23b33b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Dec 22 17:14:36 2019 -0500
+
+    Merge branch 'master' of https://gitlab.com/smlavine/smlss
+
+commit 5c3593f77dbeb4bbdbf27216f11eb52b23440ddb
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Dec 22 17:14:22 2019 -0500
+
+    fibonacci.c
+
+commit a23b33b67a91041fa53dc1ffd0438e63b8217335
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Dec 19 22:41:52 2019 -0500
+
+    A dot
+
+commit c271f52676d53ae9ab0dc01eadc216950999ec15
+Author: Sebastian LaVine <sml@debian-usb.localhost>
+Date:   Thu Dec 19 22:39:10 2019 -0500
+
+    Added -y to install of lazpaint and nuclear
+
+commit 9a6b09de8e4b60bdd8fb327568feff6ae84111f0
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Dec 19 20:09:12 2019 -0500
+
+    Change apt to unstable before installing packages
+
+commit c132ac0f6c2600048977ad804ab346e476da96a0
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Dec 17 22:20:49 2019 -0500
+
+    Added lazpaint
+
+commit 039aaf5f2e6611b4d866ded0cb37271b25958806
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Dec 17 19:45:09 2019 -0500
+
+    Removed cargo; will be handled with rustup
+
+commit b8d019328378a0bd3e6bd54bc5dcc491b7a136e6
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Dec 16 20:20:49 2019 -0500
+
+    Added libwebkit2gtk-4.0-dev: fixes surf build
+
+commit a935e065c5644c34a6e57d8deb8f2d08567635ea
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Dec 15 19:21:21 2019 -0500
+
+    Removed update notice - commits do that now
+
+commit fd918e48c27b2061c92a81ecd39cfe289528f16d
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Dec 15 16:54:01 2019 -0500
+
+    A line
+
+commit fa185175f14ffe379ebd3683b447fb93f1fdb11b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Dec 15 16:53:01 2019 -0500
+
+    Added cfacts
+
+commit 05af06de676485062f86a0b7d93e8f656a2d69f8
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Dec 15 15:52:04 2019 -0500
+
+    Fixed old -B option
+
+commit 3d9b1aeaf7c20a33e7c030ca10f0dabbcb4bbfe6
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Dec 15 15:07:41 2019 -0500
+
+    -B -> -bw
+
+commit 371839241e9cb2529994d7feb18b145627433ee1
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Dec 15 11:10:45 2019 -0500
+
+    Default border size in now 0
+
+commit ea1d58dda25b104a7391375f68d4c1b6547b205f
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Dec 15 11:02:04 2019 -0500
+
+    Added customizability to border
+
+commit fc00228e99b91f18d64d286ae79b8de87dccdd1c
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Dec 15 10:50:40 2019 -0500
+
+    set TERM as st, instead of xterm
+
+commit 2bd7dbb32b986b6ff2e34f8b794e9cd4140a4d34
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Dec 14 19:36:05 2019 -0500
+
+    Added indentation rebind to visual mode (in addition to normal mode)
+
+commit a4ca70ec39ecd4d1f35be12550e4005721b60dff
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Dec 14 17:22:17 2019 -0500
+
+    Added several QoL patches to dmenu
+
+commit 8843a753ba7219a88a677edd5e3223473a14478c
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Dec 11 15:50:02 2019 -0500
+
+    Added python
+
+commit 3c05bd3ac951033a84cd16a5d47e1f68d81c59de
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Dec 7 20:55:04 2019 -0500
+
+    Removed extra wget; added removal of nuclear .deb file after installed
+
+commit 147d270c47da8beff02d891ede7f54ef531044fd
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Dec 7 20:52:47 2019 -0500
+
+    Added nuclear music player
+
+commit af2e623280b1c54d209bffdd064eb8bec039c0be
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Dec 7 20:36:23 2019 -0500
+
+    apt-get -> apt
+
+commit 15e8e89c1ad8011323f3a4a33dc29354fec25b03
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Dec 7 20:33:05 2019 -0500
+
+    A line
+
+commit be55fd00e3ef3647ca557a2f2e9f177ff1371a30
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Dec 7 19:35:05 2019 -0500
+
+    Added openjdk-8-jre
+
+commit e8065b6cfed1087a42dd75dfc36d9c89d4e4450a
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Dec 7 14:37:36 2019 -0500
+
+    Added ed
+
+commit fa0aa54fc663029bf6a272663c1852d1cb504ff8
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Dec 2 00:56:13 2019 -0500
+
+    Added cdparanoia
+
+commit 312bde50966252edcec43b1872d99ad1c6d3cc6a
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Nov 25 17:34:13 2019 -0500
+
+    Added texlive-latex-recommended
+
+commit 9f3215dfb4651ff7c553ced76015b532d6e2fcf8
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Nov 22 00:58:07 2019 -0500
+
+    Added nautilus
+
+commit d80cb60cf5c748449126654b5a349db84db3a084
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Nov 20 23:15:56 2019 -0500
+
+    Added libssl-dev
+
+commit 00bd7d7193dce440a38ff8c69a18d0cdb76a9ad7
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Nov 17 21:23:32 2019 -0500
+
+    Changed to nvim
+
+commit c8eb2459c54d36e951fe8ab4ce8b374e533a6ee8
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Nov 17 15:24:52 2019 -0500
+
+    Clarified screenshot naming with 'date'
+
+commit f890cbea39a7ffc78bc2a814f1d4f8d35958b281
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Nov 10 00:46:02 2019 -0500
+
+    Third-party host agnostic
+
+commit d801b81f320489421b253b4cf00b1a6b5ba5d5d9
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 9 17:45:23 2019 -0500
+
+    Disabled automatic comment insertion
+
+commit b8edd68ea50d3c0cf7a0ff15a30cd8fab59bd4fd
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 9 13:55:56 2019 -0500
+
+    Added xinput
+
+commit 416c33e91153d853984cb73934b86a833b42fa23
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 2 22:13:42 2019 -0400
+
+    Surf -> Firefox
+
+commit 3ac3a669d1a5efd6edddf3dbe55549f509094f8d
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 2 22:07:19 2019 -0400
+
+    dmenu prompt now at top of screen
+
+commit 9e00d999e23f4e6f0f5435f710570325f5835c0b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 2 19:42:38 2019 -0400
+
+    Added quotes around command parameters
+
+commit c0c3ed672cedc868a0ca2a3ee10edceaf9c0e5cb
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 2 19:42:04 2019 -0400
+
+    fixed '}' outside of string
+
+commit b38456dcf858d3c2da025dfd3f350d984e4da81d
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 2 19:40:56 2019 -0400
+
+    Changed non-dmenu-blocking technique
+
+commit de7fe163c40530efcef9e7f8619a19571627d763
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 2 19:39:08 2019 -0400
+
+    bash to sh, '==' -> '='
+
+commit f2a5f4f0d2898d2718d7f911751fcde52aa3e8d7
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 2 19:38:12 2019 -0400
+
+    echo to printf
+
+commit 1aa9ae0fe7b73e1733dbf8ed8c5969f45235f996
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 2 19:37:54 2019 -0400
+
+    Changed dmenu-not-blocking method and changed echo to printf
+
+commit 0b3d9033ca1aaa68b712ee046c8b9e67c975c087
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 2 19:36:15 2019 -0400
+
+    Added quotes to prevent word splitting
+
+commit 707a0a327d137695aa6a0255a9f046f6d79666ab
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 2 18:58:00 2019 -0400
+
+    Refactored shoot
+
+commit 587dc2abe086e55cdd6842473059ab28d1de8350
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 2 16:24:52 2019 -0400
+
+    added 'make install' for suckless programs
+
+commit bdf321c11f6373eca33ec7e2eafe727c92cba259
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Nov 2 16:23:37 2019 -0400
+
+    make install no longer installs executable to root. This allows for the creation of man pages without creating global executables of suckless programs.
+
+commit 535844d6d839ea9ebb0f6be59208f9194bdbf7e2
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Oct 27 15:18:09 2019 -0400
+
+    Sorted packages.txt; will sort from now on
+
+commit 726edeba80ffe12b0032075377264748849dbad8
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Oct 27 15:13:39 2019 -0400
+
+    added libgcr-3-dev
+
+commit 9ca2d47b7516407112f4b7603850a4e6fcf32747
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Oct 27 14:10:47 2019 -0400
+
+    Added surf web browser to suckless utils
+
+commit f59c01301a32a9e4d7a7b9af6bd0b91c7b5be6ca
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Oct 26 14:23:48 2019 -0400
+
+    Added cargo
+
+commit ae063dd321c9cf2343eadce66084b63a1a3bd647
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Oct 13 12:24:58 2019 -0400
+
+    Fixed firefox private window keybind
+
+commit 4697addf50b5eb90f34180285296525da463b663
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Oct 13 10:32:50 2019 -0400
+
+    Added font packages
+
+commit 21b6b269dc1427943559b3a2ae1da5f6e46dd091
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Oct 10 22:38:17 2019 -0400
+
+    Added sct
+
+commit 19ad3881edd2b263ef3d238e0de6d03ecd6a9053
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Oct 8 21:23:05 2019 -0400
+
+    Added imagemagick
+
+commit 217647a3e014845f90870d2bc3220dae292fdef1
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Oct 8 19:38:36 2019 -0400
+
+    Fixed README line
+
+commit ccbe64be92319c496346a7b2bfebc657d4f3d538
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Oct 8 19:37:50 2019 -0400
+
+    Fixed vol for hopefully last time, now uses regex to find percentage
+
+commit 469ef9ecc6b9ae9ca85bb203f531c4d9b05a22d3
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Sep 22 17:23:17 2019 -0400
+
+    Made volume output better
+
+commit 29b1e06b8a92dbe0a153f98a3439025880fba65b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Sep 22 08:53:02 2019 -0400
+
+    Removed useless things
+
+commit 64aa76f2928d48ec941bca4795b33f35506a2c5a
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Sep 22 08:50:39 2019 -0400
+
+    Proofreading, clarification of copyright
+
+commit f71ec0fda0429e74677e501568588ed38623f960
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Sep 22 08:41:59 2019 -0400
+
+    Removed template
+
+commit 1dc5e920c889166edae6aac7e2bbd553f046fe1c
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Sep 22 08:40:50 2019 -0400
+
+    Removed file 'extract_license', as is a copy of GPLv3.txt
+
+commit 7090a977f03a30384c1862c77e0bb2ae998fd15a
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Sep 22 08:40:16 2019 -0400
+
+    Removed unnecessary comments
+
+commit 0c7fb2c6840f2d90fa1c3e9a64f7f31cd03f9586
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Sep 22 08:38:25 2019 -0400
+
+    Added calligra
+
+commit 4b2b3c83d2b6ebaed80ec4850c79359d055a085d
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Sep 4 21:03:37 2019 -0400
+
+    Fixed awk-ing wrong word
+
+commit 164249ec9816217430c95fb32880ac204aa855d3
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Sep 4 20:39:14 2019 -0400
+
+    GitLab -> GitHub
+
+commit 1c9eb1b22b2c33ad8d39df8eccc9b6667b9f513d
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Sep 3 20:05:42 2019 -0400
+
+    Added .local/bin to path
+
+commit e69a6a887a29cb2aaac45741ea780ffbcb116b43
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Aug 13 01:15:23 2019 -0400
+
+    Added nasm
+
+commit 5133c66c8aae8262a2f3705f4107b987a9ae88ca
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Aug 12 17:35:40 2019 -0400
+
+    Added steps for FCEUX installation
+
+commit 42d9264d8ce0e66da65efdf7e64e724df38760c6
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Aug 12 16:03:32 2019 -0400
+
+    Added curl
+
+commit 391486b52c5fae8822c21b360635f823418e0eeb
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Aug 12 14:05:21 2019 -0400
+
+    Fixed nvim symbolic link
+
+commit 7795056ac621312ebcecaacb6cdef4af8e8e1216
+Author: Sebastian LaVine <sml@white.localhost>
+Date:   Mon Aug 12 13:44:57 2019 -0400
+
+    Changed output name to white-st
+
+commit f493567b42cdd5c296e2c2115da7be69038ee673
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Aug 11 18:11:02 2019 +0000
+
+    Added golang
+
+commit 45d4f07a11beaed779cc4e43cb73463e0f9e6449
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Aug 11 12:30:17 2019 +0000
+
+    Removed unnecessary off script
+
+commit 8476e38dd6f1064caca4d77275cfddcbaa4dfb46
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Aug 11 12:28:30 2019 +0000
+
+    A word
+
+commit daa54790bc99f89c79a2aa032becfe99d1425eb9
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Aug 11 12:26:20 2019 +0000
+
+    Added rust install
+
+commit 74551de1b55447296fe16cc8009a48dba66d93e7
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Aug 11 12:19:32 2019 +0000
+
+    Removed reference to debs folder
+
+commit 2c596965337b6fcb27865a06b597c1338576adfd
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Aug 11 12:18:54 2019 +0000
+
+    other-install/.gitignore added
+
+commit 4cebbf163265dc257a0f9ad3e57d66c50b24d6c0
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Aug 11 12:15:11 2019 +0000
+
+    Removed (nonexistant on Debian) rustup package
+
+commit 20e3ebc660362f20cb44c674ed638a6a21ec6007
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Aug 1 00:50:25 2019 +0000
+
+    Added rust things
+
+commit 82e5e7ac1768d77f4a6af378d0c9e58f6291e57d
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Aug 1 01:49:30 2019 +0000
+
+    Revert "Revert "Messed with sic makefiles""
+    
+    This reverts commit 131a7962950b504dabaed2e004701daf1cd7760d
+
+commit 228454b19b701a0751602e53fccf927bbc6c9f57
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Aug 1 01:49:25 2019 +0000
+
+    Revert "Fixed broken config.h"
+    
+    This reverts commit 6f9799666c45229c47d0caaa8b9e553243dd5a23
+
+commit f86ecb47c46f192b5d620551b7053afec4e3b248
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Aug 1 01:48:57 2019 +0000
+
+    Revert "Merge branch 'master' of https://gitlab.com/smlavine/smlss"
+    
+    This reverts commit 434b70471d337c6bf121907f1d4f397ba9c230c6
+
+commit 434b70471d337c6bf121907f1d4f397ba9c230c6
+Merge: 6f97996 131a796
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jul 31 21:44:19 2019 +0000
+
+    Merge branch 'master' of https://gitlab.com/smlavine/smlss
+
+commit 6f9799666c45229c47d0caaa8b9e553243dd5a23
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jul 31 21:44:02 2019 +0000
+
+    Fixed broken config.h
+
+commit 131a7962950b504dabaed2e004701daf1cd7760d
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jul 28 23:30:07 2019 +0000
+
+    Revert "Messed with sic makefiles"
+    
+    This reverts commit a33239ef8550f06492dd255d9e615a8f44d9ca6e.
+
+commit a33239ef8550f06492dd255d9e615a8f44d9ca6e
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jul 28 23:30:04 2019 +0000
+
+    Messed with sic makefiles
+
+commit b5c4273184c7a9fdd75698180f501dd53206d6cd
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jul 28 23:29:27 2019 +0000
+
+    Revert "Moved killclient keybind. Added script to quit dwm with dmenu and changed binding"
+    
+    This reverts commit 8a7c963b58fdae5b644e98c6763aeb12ff5462f6.
+
+commit 8a7c963b58fdae5b644e98c6763aeb12ff5462f6
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jul 21 15:21:31 2019 +0000
+
+    Moved killclient keybind. Added script to quit dwm with dmenu and changed binding
+
+commit 9100a4fd75c42d2a49da4dd5140c6466cc2035ef
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Jul 18 19:22:21 2019 +0000
+
+    Removed local bin section, added $GOBIN
+
+commit f72df0279bdb4134d8e835c817a97ad8b9f19033
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jul 17 18:13:01 2019 +0000
+
+    Added installation of terminal-based discord client, 6cord
+
+commit 5571abc2808621afd623aa7f1c198c3e12e75f7e
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jul 17 11:26:08 2019 +0000
+
+    Changed printings to use echo, not printf; moved set -o vi
+
+commit dbe944105084fcc0cd89d47b2ac4e2ebae92c677
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jul 7 11:57:32 2019 -0400
+
+    Fixed full battery option for top bar
+
+commit 5b876dbbde4a76a5f43bed71efbdb2f2fc89c3c7
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jul 7 11:56:44 2019 -0400
+
+    De-cluttered info bar
+
+commit a800233b386c9bc45cc8952ce74e3602804ac2d8
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Jul 6 20:18:22 2019 -0400
+
+    Simpliied .xinitrces to use improved vol, + dwm
+
+commit 8c94b083b3fb509476bd51fa7f57461c2a5fc660
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Jul 6 20:09:23 2019 -0400
+
+    Simplified vol output of level of volume
+
+commit ab3183efdf5c1a9b9715b8a6cf46ddceaa4f1986
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Jul 6 20:05:19 2019 -0400
+
+    Revert "Removed alsa-utils"
+    
+    This reverts commit 8b889c24be48702c810d1859bf31ef8a408fec9a.
+
+commit 8b889c24be48702c810d1859bf31ef8a408fec9a
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Jul 6 19:37:20 2019 -0400
+
+    Removed alsa-utils
+
+commit 7dd6b6483403b5d29acbd8526e47bb15cf45b93c
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Jul 6 10:30:22 2019 -0400
+
+    Fixed syntax error due to comment
+
+commit 8e0bf87fdd15df75086af23b192828f0c77aa75a
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Jul 6 10:29:18 2019 -0400
+
+    Added GOPATH
+
+commit e296832cb613b652ccedc11181ec581f227828e1
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jul 3 14:52:43 2019 -0400
+
+    Added option for full battery to switch
+
+commit 66c6e20ee541a060740f5cb5cfe7d83e212a9fe0
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jul 3 14:30:51 2019 -0400
+
+    Removed set expandtab (indent with tabs now)
+
+commit e009baa1e3c08813ae510ace3d9f740e0893a236
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jul 3 13:19:09 2019 -0400
+
+    Added .mpd folder
+
+commit 481d1ec060e2387c71701faebfaba5d965b75487
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Jul 2 22:57:44 2019 -0400
+
+    Added white-st, with inverted foreground/background
+
+commit f03be6f07657e062c60cfd778e1da52f7d54b72d
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Jul 1 23:39:00 2019 -0400
+
+    Updated battery components to use acpi
+
+commit d766c6d5429326f37c4f3bce2671a1cc6a75dc11
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Jun 29 01:35:11 2019 +0000
+
+    Changed font
+
+commit 35d4e04003a661053bf98c9bab023be14b993a24
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Jun 28 19:45:16 2019 +0000
+
+    Removed texlive package
+
+commit fe4c247e27657f73bcb6a34c48707cc2ebeb4ea0
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Jun 28 19:44:43 2019 +0000
+
+    Simplified volume in top bar
+
+commit 7a2064267248607ac2a0d2aad4bd951d47c0b2af
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Jun 28 17:57:05 2019 +0000
+
+    Fixed export TERM
+
+commit 233e73a082b595765366868a46e10fe1a4bdb8a8
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jun 19 23:03:20 2019 -0400
+
+    Added indentation-fix binding <C-I> to overrule == change
+
+commit a6f848e34df6b3eec1b97a1e32bc9ab6b66a6887
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jun 19 23:00:41 2019 -0400
+
+    Added indentation-fix binding <C-I> to overrule == change
+
+commit 0ca38319cb7c81fe951209cc54c19d929b8bf5a5
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jun 19 15:31:53 2019 -0400
+
+    Changed window border color to red
+
+commit bd247bd4f535294b02ba51628fb896b6edb234d6
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Jun 19 15:29:58 2019 -0400
+
+    Changed border color to red
+
+commit 59dd1f5ae968d483dc2cf342a42649bc52462433
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Jun 18 15:49:22 2019 -0400
+
+    Removed vim from packages
+
+commit 3fb4316dec525077e264f929b8ea176f17f74e36
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Jun 18 14:51:10 2019 -0400
+
+    Added syntax off line
+
+commit 9ecfaafe0c70e0bc7c92750851c50ebb9a2cda8f
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Jun 18 14:48:23 2019 -0400
+
+    Added support for neovim
+
+commit 6038b7cdefb26b02d0c4488b15b8c365496ebb02
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Jun 18 02:19:43 2019 -0400
+
+    Quicker window resizing bindings (-, =, <, >, +)
+
+commit 490e422f2d33aacfdec1474b570c89e1da51483c
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Jun 18 00:33:33 2019 -0400
+
+    Improved color column
+
+commit 7e4ee40b504b28cc6c1b567fcfe2644f1bc83f4a
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Jun 17 13:18:57 2019 -0400
+
+    Readded scrollback
+
+commit b84bdbe71066582b3b6edf2c1d68134f038e3011
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Jun 15 20:48:50 2019 -0400
+
+    Re-built sst
+
+commit 49e2e412e80e9bcda1d8a8735485d9bab8f0ac75
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Jun 14 17:25:19 2019 -0400
+
+    Added indicator of keyboard input to bar
+
+commit aeb53a799f3f7c2edf09fe9be1ee5acccbdfbcec
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Jun 14 17:19:22 2019 -0400
+
+    Added Alt-U binding for tog-intl-keys.sh
+
+commit 3b68d9c3f0ea48cd135a227066ffb2edbe0c2d4e
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Jun 14 17:18:20 2019 -0400
+
+    Added tog-intl-key.sh
+
+commit 73cf6eaf035bce848d432f2ccea548736e892c79
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Jun 14 17:07:18 2019 -0400
+
+    Simplified volume output
+
+commit 263796a1e396dea0f65c6eeae0958ef927e26010
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jun 9 19:16:13 2019 -0400
+
+    Removed 'installation' of scripts and suckless utils
+
+commit 21da98eb1099bf308c510b9848d2820d87a489fc
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jun 9 19:15:37 2019 -0400
+
+    Added scripts and suckless directories to path, so that they are no longer necessarily the same over the entire system. This allows many users on the same computer to use smlss differently.
+
+commit ef63fd857e172b50b972a264382c43afcdef35c4
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jun 9 19:09:43 2019 -0400
+
+    Moved startx to end of .profile
+
+commit 69e995bf856223125146c1e80039e0a0fec9a2e6
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jun 9 19:05:29 2019 -0400
+
+    Removed sil from path
+
+commit 2744f10779fd95aec67644ff46b7fc3b8955f071
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jun 9 19:00:17 2019 -0400
+
+    Corrected TERM variable
+
+commit 6b1bd4ca963e4dfe5aa50eca2a204cabecbd0dff
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Jun 9 18:57:47 2019 -0400
+
+    Changed color of border around windows to red
+
+commit 2412f843d70d099cb9c4419b93ecb643258ba2d1
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Jun 7 16:30:40 2019 -0400
+
+    Fixed private window Firefox
+
+commit 259ad5952788e089559e5b225b61c4161e30e2f9
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Jun 4 18:46:34 2019 -0400
+
+    Removed sudo apt alias. What could I have been thinking, 2 hours ago?
+
+commit 9e214c91569619a0d3df1483123fa9d98cea99df
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Jun 4 16:32:26 2019 -0400
+
+    aliased apt for sudo apt
+
+commit 400d3b7a99e9bbc83db5493f658323f5a0604cc5
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Jun 4 16:14:25 2019 -0400
+
+    Added -f to removal of temporary files in vim
+
+commit 3f47f3200fa142e82af869ba0ff1e1e7d0143f57
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Jun 4 16:13:33 2019 -0400
+
+    De-chromiumed rest of smlss
+
+commit 5308d8e52e6b1f12d750ca268dee08d5b7b31d67
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Jun 4 16:09:41 2019 -0400
+
+    Removed chromium.
+
+commit 78a8064a1db0d1565c2b4c858e66818041e976de
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu May 30 18:35:56 2019 -0400
+
+    Re-added broken keyboard bindings
+
+commit e1e398271f1041faf1fb6c6b8984a9842c350799
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu May 30 18:25:51 2019 -0400
+
+    Changed back wicd binding to mod+w
+
+commit 496013eb764d7b6e7d61627e71d762adfb57e870
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed May 29 21:47:26 2019 -0400
+
+    Cleaned up file a bit, changed wicd binding
+
+commit b18ce3f60f3ca81260760c22979a000a765ccf90
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed May 29 20:17:28 2019 -0400
+
+    Removed dwmstatus since it wasn't used
+
+commit b8ebb77cc85a7e9dd375ad752c3d87324559f638
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 27 09:29:59 2019 -0400
+
+    Changed Mod+D binding from Discord to current-cmus.sh script
+
+commit a04f7a5405bbac71a4efa5eb4998972c992e672f
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 27 09:27:33 2019 -0400
+
+    Added cmus control/info dmenu script
+
+commit d8c7d6284bd98f8a9374185ad80fe94aa42e340b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 27 00:31:07 2019 -0400
+
+    Added xclip
+
+commit 72b2d0f410f9276fd6be87c595a43b3d682583ac
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 27 00:30:44 2019 -0400
+
+    Added binding to pause cmus music
+
+commit 880538d577d33539c6f2f8dead31618faf85aa90
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue May 21 21:23:20 2019 -0400
+
+    Made use of SHCMD macro
+
+commit e846789d3bf3abd081319a8241737d2ccf7dd37f
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue May 21 21:04:14 2019 -0400
+
+    Added gaplessgrid mode
+
+commit 16468d73fb5282f64e3a9f545e914c72c2142948
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 20 11:56:55 2019 -0400
+
+    Now takes infinitely many arguments
+
+commit e905e07f118cf85c37030c983b30db9da0bc5b2e
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 20 01:58:14 2019 +0000
+
+    Add LICENSE
+
+commit 086b1e5d056f635d8c280c69fef3f6dea13327f3
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun May 19 21:51:23 2019 -0400
+
+    Two -> Three
+
+commit f13da030cc6c827e15dcac5804a4560474b6a4c7
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun May 19 21:50:36 2019 -0400
+
+    Expanded readme, namely with section "What smlss doesn\'t"
+
+commit 976c6b01306a015c0cb8a03ab8df4c6305e0d785
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun May 19 21:38:58 2019 -0400
+
+    Removed .xsession-errors
+
+commit 718f989df969c011f752fecf82c579249f64b1f8
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun May 19 21:34:55 2019 -0400
+
+    Clarified copyright section
+
+commit 57c511ed9ff15e2661ef1294509083013bc920c6
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun May 19 13:49:17 2019 -0400
+
+    Added quotes to move command, to support filenames with spaces
+
+commit d868f6409040b44811999f59b437e62968599094
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun May 19 13:35:11 2019 -0400
+
+    Removed nonfree software from debs/; updated README.md
+
+commit 138c46b10b066a72770d619bf41a4d68fbf34538
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun May 19 13:28:35 2019 -0400
+
+    Removed installation of massmove through cloning of repo with c program; instead rewrote the program in python and included it in scripts.
+
+commit 12ebb7be66ed72b1459569cc7a0cecdf47a8d14e
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat May 18 16:00:58 2019 -0400
+
+    Moved extract_license to GPLv3.txt
+
+commit 02ad3e0ad1111f841e984e11600cd7837bcd0114
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri May 17 00:32:03 2019 -0400
+
+    Added off script
+
+commit 8737b10a4fec30e8c80f0690609764b34f62662f
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri May 17 00:31:08 2019 -0400
+
+    Moved mit-license.sh to script-template.sh and made it a proper template for the creation of future scripts
+
+commit bab24fa100545c3302dc0a94c88b9709eb8d6e82
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu May 16 23:12:16 2019 -0400
+
+    Added instructions to install from source massmove
+
+commit de2c472b7d87a98d1fef34f10b7160ed54e5e043
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed May 15 21:28:59 2019 -0400
+
+    Changed some copyright things, namely smlss license to MIT, and added MIT headings to scripts
+
+commit 1a5d1e3d446695b02e00f2c8b7c7631be091423e
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed May 15 18:00:16 2019 -0400
+
+    Clarified comment in extract
+
+commit 253e539536082d4a516a718363cebf8954b17f4f
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 13 00:20:53 2019 -0400
+
+    Re-added broken keyboard fixer arrow bindings
+
+commit 2957c303d7592f823ab54cc070f87bd9fe0413d1
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu May 9 21:46:19 2019 -0400
+
+    Added binding for 'shoot -a'
+
+commit e1042238c93b47819b32d1cc4696e212250b2f14
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu May 9 21:44:57 2019 -0400
+
+    Added '-a' option, to go around dmenu prompt
+
+commit db7a5638762f1b6cf3a4a8258d14e3734a2568fb
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu May 9 20:08:08 2019 -0400
+
+    Removed bindings to open up suckless configs, changed shoot keybind to use new shoot features
+
+commit 791c5fb64118e3a8371f80bc3a2bee04d72f14db
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu May 9 20:06:25 2019 -0400
+
+    Added dmenu usage, ability to select name of screenshot
+
+commit 1fd2b016de9e75f70cf2a29ae37d264997d91839
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 6 17:59:38 2019 -0400
+
+    Added a sleep in between page load and f5
+
+commit 8e157ceaf144f316a27c1b80b4f55850cc2f2506
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 6 17:58:50 2019 -0400
+
+    changes to install-script.sh
+
+commit 96f2b323f7120e81cac723648e6091c438e99285
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 6 17:45:10 2019 -0400
+
+    Added script to automate reinstallation of scripts
+
+commit 125839eed642a2ab930150dd21344616f469eb0b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 6 17:40:44 2019 -0400
+
+    worked around annoying thing in chromium where vimium wont work unless page refreshes
+
+commit 06317c771d8fdc421f7565c44873a2f2641b7f79
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon May 6 00:13:25 2019 -0400
+
+    Replaced qutebrowser with chromium
+
+commit 1265fff1c54c33c8629073cbc334cc0cb246a9c3
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Apr 29 17:34:28 2019 -0400
+
+    Replaced spotify binding (mod-s) with shoot in dwm
+
+commit 3c82245a47dcae35f80515d88c536dc315a769c8
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Apr 29 17:32:13 2019 -0400
+
+    Install scripts to /usr/local/bin, not /usr/bin; only install executable files in scripts; renamed screenshot to shoot
+
+commit 7465e3e26907186e1c62049652ee22f6038f0b9b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Apr 29 17:23:32 2019 -0400
+
+    Added script to take a screenshot and save it to ~/Documents/pictures
+
+commit 5aac25017f81edd00f1e498bd33d52e873e7381c
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Apr 29 17:18:24 2019 -0400
+
+    Added packages
+
+commit 294c6a4f7a9acc56440879b02c97c33f8f2db308
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Apr 27 00:56:08 2019 -0400
+
+    Added pavucontrol to packages.txt
+
+commit 946e26be24814e4b3eedd5ca480161da7ef21ed6
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 14:44:58 2019 -0400
+
+    Added obs-studio to packages.txt
+
+commit a4d43c0934f8a80fe68bf4ee11736e83d8f163f5
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 14:43:52 2019 -0400
+
+    Added fceux to packages
+
+commit 84b7c0b9ad2a0986d0aa40a30382f0cdea9dbaa1
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 14:43:20 2019 -0400
+
+    Updated dmenu-javadoc-lookup to accurately load file instead of searching for it with qutebrowser
+
+commit ce049c766aec1b83d8bb4bb5bc753e04dd2c4bc9
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 14:40:16 2019 -0400
+
+    Added openjdk-8-jdk to packages.txt
+
+commit b971029d789a57f73f3d9224537412344f615c93
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 14:33:31 2019 -0400
+
+    Properly install debs
+
+commit b2dbcb09f0b257ffcafd272f731ad1f449224640
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 14:30:53 2019 -0400
+
+    Add user to sudo
+
+commit 906e48bb0ecae7ea78ae3ecf5bd6ce4661ad81c8
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 14:29:50 2019 -0400
+
+    installation of qutebrowser automatically says yes to prompt
+
+commit f30353b6e2bba4f114df0423cc75ee1f5f7cdd7a
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 13:54:39 2019 -0400
+
+    Install .deb files in debs/ with apt, not dpkg
+
+commit 027b0b0c5563395567678d5b69e43ffa70f196a3
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 13:53:57 2019 -0400
+
+    Readded st.info in suckless/vga-st and suckless/st after accidental deletion
+
+commit 30c9609fd16d4d950fdd07a4003204abfadf373e
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 13:53:00 2019 -0400
+
+    edited smlss.sh to use complete paths to smlss folder, changed chown args to be right
+
+commit 7911f2f8be03d3d14b19d3261a29d41a03fe3aa6
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 12:46:58 2019 -0400
+
+    Added qutebrowser through other-install
+
+commit d658b966dd3aa2a09819e88d8174463f4ded161a
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 12:32:28 2019 -0400
+
+    Added firefox-esr to packages
+
+commit e36bac182d98d6c6a912377d7e321af94cdf813b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 12:30:57 2019 -0400
+
+    Added pulseaudo to packages
+
+commit 3c2fe65cf5a0a6ff590c86b9a5828c1dac4609dd
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 12:24:13 2019 -0400
+
+    chown section now properly changes ownership of symlinks
+
+commit 55f6178f0dea7652d4ac9fdc80711372b80ccc48
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 26 00:36:38 2019 -0400
+
+    Added qutebrowser .deb files, removed name from packages.txt
+
+commit 271d1fa3e0986eba65bcde2045c58d4f7eae5eff
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Apr 25 17:11:48 2019 -0400
+
+    Replaced firefox with qutebrowser, including in firefox keybindings in dwm
+
+commit c12e9c9f51ad5e6139eab26e397796b2bab328ce
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Apr 22 13:45:16 2019 -0400
+
+    Moved gpl3 from LICENSE to scripts/extract_license to make it clearer that gpl3 is included only for extract script
+
+commit f62da6daa3d24d8639c00a236c13eaf0ec0c81ff
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Apr 22 13:42:29 2019 -0400
+
+    All dotfiles now are made using symlinks, not just directories
+
+commit 88ee2425b0af188310651bde80726be1e0691802
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Apr 22 13:40:24 2019 -0400
+
+    Updated .bash_aliases
+
+commit 19565d1bf9246c59b77ebfd0a82443ea5682270e
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Apr 22 13:34:01 2019 -0400
+
+    simplified .bashrc
+
+commit 3af326744b7745b4a1927f9a63babff116eeb297
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Apr 20 23:08:32 2019 -0400
+
+    javadoc lookup no longer conflicts with switching active window
+
+commit 437b58b75059f98630e7899b3bc1ba9c469cd136
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Apr 20 21:46:28 2019 -0400
+
+    Script now does nothing if user escapes out
+
+commit f2cf66b6586de96a0dcf4877f003656c9a43ecd6
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Apr 20 21:39:18 2019 -0400
+
+    Added keybindings for dmenu-javadoc-lookup
+
+commit e2b3d0f594ed68e0475cb2f5e0ade84a460fb693
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sat Apr 20 21:37:04 2019 -0400
+
+    Added script to lookup java documentation
+
+commit 28a2c1de9d384e3381cc43cd681c1da3ddf33333
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Apr 19 19:34:13 2019 -0400
+
+    Reverted dmenu back to suckless repo, fixing stdin problem. Defined FC_COLOR as "", as not declared elsewhere. Doesn't seem to cause problems :P
+
+commit d8cfea9d911656e782657917daa0a7a747c99a35
+Merge: ff0166d de3224b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Apr 18 20:57:41 2019 -0400
+
+    Merge branch 'master' of https://gitlab.com/smlavine/smlss
+
+commit ff0166da1f90d57fa4ff6d88ea2809f202ef1bf4
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Apr 18 20:57:14 2019 -0400
+
+    Changes to init.vim
+
+commit de3224b2ca9eb73a0541a147b3c6eb1605310443
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Apr 18 18:06:20 2019 -0400
+
+    Added url opening from command line support
+    , from Luke Smith st
+
+commit 9fc3cb616ace69b8e1a0b72b6ef388928e03dfea
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Apr 17 12:36:03 2019 -0400
+
+    Reomved added -n option, added -S option; stdin closed w/o -S by default now
+
+commit eb0b7d1f839ede3b6046c53f7071aaf0bf2388b6
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Apr 17 12:31:54 2019 -0400
+
+    Added vga-st; better viewing on a vga monitor
+
+commit b2c4de833c8ef0c5ced633fc3427bad200586bf1
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Apr 17 12:31:28 2019 -0400
+
+    Fixed dmenu -h spacing
+
+commit a0bda66ad6e1dd766f16199b604674a2b1d33ced
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Mar 18 20:02:03 2019 -0400
+
+    C switches align better
+
+commit 25821235410e43161e37eeadc822a86a3ad07bc5
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Mar 18 19:57:56 2019 -0400
+
+    Made backspace work "better" in vim
+
+commit efd2ffda313edd279ebb2d19513bcf92a0e6b666
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Mar 18 19:51:29 2019 -0400
+
+    Renamed gpl to LICENSE
+
+commit 2ebe5e90f872636cbe0a6343595af4643af6b673
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Mar 18 19:49:09 2019 -0400
+
+    Goes down to find quickrun output
+
+commit c78210c965722f0cc276ef7f5d9a5dab28d47172
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Mar 18 19:23:19 2019 -0400
+
+    Added QuickRun to Vim, and QuickRun binding to .vimrc.
+
+commit 2e71e2e82328c985f6ba1a2e396c08cc6e39c31f
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Mar 4 20:57:51 2019 -0500
+
+    Replaced feh with sxiv
+
+commit 3c8f32d89fd95a9b6b3199ef48b984a6290b0055
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Mar 3 18:31:44 2019 -0500
+
+    Removed netcat
+
+commit b99997fe0ebad643829a198a7b2be53afdde84d4
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Mar 3 18:29:26 2019 -0500
+
+    New packages
+
+commit db2bcc0130dbc9ea58e103be6059eb89e80ddd40
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Mar 3 17:06:56 2019 -0500
+
+    New packages
+
+commit 69c81592c3dd4c1e1fb53cbe472a1860296a0437
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Mar 3 16:51:01 2019 -0500
+
+    New packages
+
+commit 329be3b84b7fd7845b742ac743ee568d3028ba70
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Mar 1 23:02:57 2019 -0500
+
+    More vimrc comments
+
+commit 0ea569f0d39728a052b3cf0c13aa46dd057c971b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Mar 1 22:59:45 2019 -0500
+
+    Removed binaries from suckless
+
+commit 42e6bb35867dc41efa7d60a0bb16f4184af6dd57
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Mar 1 22:56:47 2019 -0500
+
+    Added comments to vimrc
+
+commit 75c1535ddbf4f343baf5b3dc1d4e881dccf33f1d
+Merge: ce96519 20e4ab4
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Mar 1 22:52:35 2019 -0500
+
+    Merge branch 'master' of https://gitlab.com/smlavine/smlss
+
+commit ce9651918b04f1755af1646691a31658a5e7a3f2
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Fri Mar 1 22:51:59 2019 -0500
+
+    Added capitalization binds to .vimrc
+
+commit 20e4ab41d09bfbd7f01e27fe565e274aeaccddfa
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Feb 21 23:58:04 2019 -0500
+
+    Modified dwm to add keybindings for moving mouse with keyboard
+
+commit 53a7d5c0e604e6f56da3b4b4bf87384b29c989d7
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Feb 21 23:25:36 2019 -0500
+
+    Added packages
+
+commit a3ff2868e6ae7dfffa9e3a5dfaec087b24932dcb
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Feb 21 09:56:01 2019 -0500
+
+    Fixed broken quote in README
+
+commit f2b72b78b682f16ae361af7fc8257d768db55668
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Feb 21 09:55:25 2019 -0500
+
+    Fixed broken quote in README
+
+commit 826b61867c1c972e74a3e40a9787518078f9689f
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Feb 21 09:52:14 2019 -0500
+
+    Added other-install directory for software that must be installed in a matter different from source, debfiles, or apt. Added firefox65 to other-install.all. Added firefox-65 installation method to smlss.sh
+
+commit a4853395306c96f3b10573d953f83897184f5676
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Thu Feb 21 09:33:25 2019 -0500
+
+    Removed firefox from packages
+
+commit c1ccbc74c193ab493636a9abd8cbaeef6f8103cb
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Feb 20 11:15:53 2019 -0500
+
+    Added packages
+
+commit b64776e241953b3256213478f56c0ba56b6e35f9
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Feb 20 11:15:21 2019 -0500
+
+    Added packages
+
+commit f1361971b15d512c73828af558494d4e02353a2e
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Feb 20 10:57:03 2019 -0500
+
+    Added packages
+
+commit 5b987e2ec4ea96ae093784a47db582ad45f7e690
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Wed Feb 20 10:49:22 2019 -0500
+
+    Replaced (nonexistant) package amixer with alsa-utils
+
+commit 334aa2257f2d40e1284abd5209252f348ff0ffed
+Author: Sebastian LaVine <sml@debian.lan>
+Date:   Wed Feb 20 10:39:55 2019 -0500
+
+    Removed battery info from default .xinitrc. Moved (original) file to .xinitrc-battery. smlss now detects primary user's name by looking at the name of the directory in /home, and uses that information to chown that user ownership of all files created by smlss at the end of the script running.
+
+commit d0700277415b3c2366c35952126b334c89edbe45
+Author: root <root@debian.lan>
+Date:   Tue Feb 19 22:52:59 2019 -0500
+
+    Added packages
+
+commit 3d9d7f2c80d4550611f674fa44ccd73171cbeda9
+Merge: 3d0bb77 85cd380
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 22:19:07 2019 -0500
+
+    Merge branch 'master' of https://gitlab.com/smlavine/smlss
+
+commit 3d0bb776ba944cb7fe8f84514da1e6ae14df23af
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 22:18:50 2019 -0500
+
+    Added vol script
+
+commit 85cd3806fc6cbf9ce362db60116880ef7757195a
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 22:18:30 2019 -0500
+
+    Added packages
+
+commit 715c8689d117b91ea7e0a876141a9bd0da0f0c0c
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 22:13:16 2019 -0500
+
+    Added packages
+
+commit b97af9aef3873977dbb37050874660e46c05c201
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 22:11:38 2019 -0500
+
+    Added packages
+
+commit 7ba1f63b10d9f67ce92f8475882250bddf3ac1d1
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 22:09:44 2019 -0500
+
+    Updated README to reflect that this project is now hosted on the superior Gitlab
+
+commit 720f340d4b939360635b7ac7b480cf06858bcfec
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 22:08:54 2019 -0500
+
+    Added -y option to apt-get install
+
+commit 0b3840c2318a17251c09bf60b5eba9b0ea3f8a98
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 22:07:45 2019 -0500
+
+    Added packages
+
+commit 81a1c1dba31117aa7bf1411d1f1a30810ca28541
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 22:02:57 2019 -0500
+
+    Added extract
+
+commit 6411b3f60d602a0f1fcf9f44f54ddc274b841677
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 22:00:13 2019 -0500
+
+    Removed suckless programs as submodules (too complicated for my poor brain at 10pm)
+
+commit 95200fec54cac16193563a877090a32024a93759
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 21:51:52 2019 -0500
+
+    Fixed not reading from packages.txt
+
+commit 6260fb149a050fe832cd06b287c5579079c526de
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 21:51:23 2019 -0500
+
+    Added packages
+
+commit 48721157ba8d29e03e29a682c50916d3086eb9a4
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 21:29:01 2019 -0500
+
+    Added packages
+
+commit 69a4650a3eeae4a7804e95ed3f069f7bb1fe2d20
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 21:20:59 2019 -0500
+
+    Added packages
+
+commit 468775d7e0800837bddcfaafabf74a4184ffec9f
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 21:06:39 2019 -0500
+
+    Added installation of .deb files, scripts, and download and installation of files in packages.txt
+
+commit 14ab7259a5c9523be11ca6a5921d513e786afd8b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 21:02:30 2019 -0500
+
+    Added packages.txt, which contains a list of all packages to be installed
+
+commit 1094a2456239c0092c0152d3cb2a64e7afebf3b5
+Merge: 7199a04 02008df
+Author: Sebastian LaVine <sml@white.lan>
+Date:   Tue Feb 19 20:59:00 2019 -0500
+
+    Merge branch 'master' of https://github.com/smlavine/smlss
+
+commit 02008dfbd69ac4ab17f91541154f72d1d6c2280c
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 20:54:18 2019 -0500
+
+    Changed references to directory from .smlss to smlss
+
+commit 62ab4871ea9af99700da795eac0df728ada12bde
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 20:52:38 2019 -0500
+
+    chmod +x extract
+
+commit b854c0a55866905611df09ccb64b287ecf2ced5b
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 20:52:08 2019 -0500
+
+    Added scripts folder to hold scripts to be installed. 'extract' script under GPLv3, so added gpl-3.0 to directory.
+
+commit 7199a04a66e14b23eeac68d4a14b0d68e8e6fa79
+Author: Sebastian LaVine <sml@white.lan>
+Date:   Tue Feb 19 20:16:58 2019 -0500
+
+    Added manual installation of git to README instructions
+
+commit ced7b9c8921d7bfff3cde0cf82ae4a619f16bca6
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 18:26:07 2019 -0500
+
+    Added copyright notice to smlss.sh
+
+commit b0ec0a0990dfd030a440c0ac51f33fd24082fc64
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 18:07:43 2019 -0500
+
+    Test: removing sil
+
+commit fc13e178efadf9f4830a441eec7bf0ba27e9d091
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 18:06:38 2019 -0500
+
+    Updated README to discuss Suckless
+
+commit 7722a22c81ce5fed0f1aebced84f4ba4dadcd9f2
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 18:03:10 2019 -0500
+
+    Re-added .vim to dotfiles, with symlink to .vimtmp in homedir
+
+commit 2743e07612d1a0ecd6d69dd20a7ed739e3cc51b8
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 18:02:21 2019 -0500
+
+    Added building of suckless programs to smlss
+
+commit f07ba2237c427586e5524b131c1e5a529ba549aa
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Tue Feb 19 17:44:30 2019 -0500
+
+    Moved suckless programs to smlss
+
+commit 2fe7b56d92cb1c6cd3efe275d701fdce04a17bce
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Feb 18 18:46:56 2019 -0500
+
+    Removed .mozilla from dotfiles
+
+commit 84fe88c121dd0247691fa7d6aa73848b44ea8519
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Feb 18 18:45:29 2019 -0500
+
+    Removed .viminfo from dotfiles. Specifically noted that .smlss should be in homedir in README.md. Began working on smlss.sh with symlinks to dotfiles. TODO: installation of necessary software
+
+commit 295f0d2a71e6ee1d88168ab6fd6545b0a00a3db2
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Mon Feb 18 15:32:02 2019 -0500
+
+    Updated README.md; Moved system configuration files to dotfiles
+
+commit 91cfc4f9b41b92eec2578e09b4987e34acf5b010
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Feb 17 20:09:17 2019 -0500
+
+    Fixed README
+
+commit c45e5300fa4b8b55a8bf485250269bdcce2988af
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Feb 17 20:07:08 2019 -0500
+
+    Updated README
+
+commit 4934661b2d1408140112a55997155a4ce5561d57
+Author: Sebastian LaVine <seblavine@outlook.com>
+Date:   Sun Feb 17 19:54:50 2019 -0500
+
+    Initial commit
