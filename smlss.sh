@@ -37,12 +37,12 @@ done
 # set up symlinks to config files
 for item in $(ls -A1 "/home/$username/smlss/dotfiles")
 do
-    ln -sf "/home/$username/smlss/dotfiles/$item" "$item"
+    ln -sf "/home/$username/smlss/dotfiles/$item" "/home/$username/$item"
 done
 
 # links for nvim
 mkdir "/home/$username/.config"
-ln -s "/home/$username/smlss/dotfiles/nvim" .config/nvim
+ln -s "/home/$username/smlss/dotfiles/nvim" "/home/$username/.config/nvim"
 
 # install suckless programs (dwm, st, etc.)
 for item in $(ls -A1 "/home/$username/smlss/suckless")
@@ -66,3 +66,4 @@ shopt -s globstar
 chown "$username" ** -Rh 
 chown "$username" .** -Rh 
 cd "/home/$username/smlss"
+
