@@ -40,10 +40,10 @@ dist: clean
 	@rm -rf sic-${VERSION}
 
 install: all
-	#@echo installing executable file to ${DESTDIR}${PREFIX}
-	#@mkdir -p ${DESTDIR}${PREFIX}
-	#@cp -f sic ${DESTDIR}${PREFIX}
-	#@chmod 755 ${DESTDIR}${PREFIX}/sic
+	@echo installing executable file to ${DESTDIR}${PREFIX}
+	@mkdir -p ${DESTDIR}${PREFIX}
+	@cp -f sic ${DESTDIR}${PREFIX}
+	@chmod 755 ${DESTDIR}${PREFIX}/sic
 	@echo installing manual page to ${DESTDIR}${MANPREFIX}/man1
 	@mkdir -p ${DESTDIR}${MANPREFIX}/man1
 	@sed "s/VERSION/${VERSION}/g" < sic.1 > ${DESTDIR}${MANPREFIX}/man1/sic.1
