@@ -54,8 +54,9 @@ ln -s "/home/$username/smlss/dotfiles/nvim" "/home/$username/.config/nvim"
 for item in $(ls -A1 "/home/$username/smlss/suckless")
 do
 	cd "/home/$username/smlss/suckless/$item"
-    make
-	make install
+	# suckless programs are installed per-user, not for the entire system;
+	# they must be installed as the primary user.
+    sudo -u $username make install clean
 done
 
 # install rust (rustup)
