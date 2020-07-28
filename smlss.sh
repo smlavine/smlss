@@ -35,10 +35,15 @@ for pkg in $(cat "/home/$username/smlss/packages.txt"); do
 done
 
 # set up symlinks to config files
-for item in $(ls -A1 "/home/$username/smlss/dotfiles")
-do
-    ln -sf "/home/$username/smlss/dotfiles/$item" "/home/$username/$item"
-done
+ln -sf "/home/$username/smlss/dotfiles/.bash_aliases" "/home/$username/.bash_aliases"
+ln -sf "/home/$username/smlss/dotfiles/.bash_logout" "/home/$username/.bash_logout"
+ln -sf "/home/$username/smlss/dotfiles/.bashrc" "/home/$username/.bashrc"
+ln -sf "/home/$username/smlss/dotfiles/.profile" "/home/$username/.profile"
+ln -sf "/home/$username/smlss/dotfiles/.xinitrc" "/home/$username/.xinitrc"
+
+# make pianobar fifo, for use in "scripts/toggle-music-pause.sh"
+mkdir "/home/$username/.config/pianobar"
+mkfifo "/home/$username/.config/pianobar/ctl"
 
 # links for nvim
 mkdir "/home/$username/.config"
@@ -56,9 +61,6 @@ done
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs |
 	sh -s -- -y --no-modify-path # rust env-vars already in PATH, in .profile
 
-# make pianobar fifo, for use in "scripts/toggle-music-pause.sh"
-mkdir "/home/$username/.config/pianobar"
-mkfifo "/home/$username/.config/pianobar/ctl"
 
 # make the installing user the owner of all files created
 cd "/home/$username"
