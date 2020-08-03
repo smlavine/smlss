@@ -41,9 +41,9 @@ dist: clean
 
 install: all
 	@echo installing executable file to ${DESTDIR}${PREFIX}
-	@mkdir -p ${DESTDIR}${PREFIX}
-	@cp -f sic ${DESTDIR}${PREFIX}
-	@chmod 755 ${DESTDIR}${PREFIX}/sic
+	@mkdir -p ${DESTDIR}${PREFIX}/bin
+	@cp -f sic ${DESTDIR}${PREFIX}/bin
+	@chmod 755 ${DESTDIR}${PREFIX}/bin/sic
 	@echo installing manual page to ${DESTDIR}${MANPREFIX}/man1
 	@mkdir -p ${DESTDIR}${MANPREFIX}/man1
 	@sed "s/VERSION/${VERSION}/g" < sic.1 > ${DESTDIR}${MANPREFIX}/man1/sic.1
