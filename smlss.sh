@@ -38,7 +38,7 @@ done
 ln -sf "/home/$username/smlss/dotfiles/.bash_aliases" "/home/$username/.bash_aliases"
 ln -sf "/home/$username/smlss/dotfiles/.bash_logout" "/home/$username/.bash_logout"
 ln -sf "/home/$username/smlss/dotfiles/.bashrc" "/home/$username/.bashrc"
-ln -sf "/home/$username/smlss/dotfiles/.profile" "/home/$username/.libao"
+ln -sf "/home/$username/smlss/dotfiles/.libao" "/home/$username/.libao"
 ln -sf "/home/$username/smlss/dotfiles/.profile" "/home/$username/.profile"
 ln -sf "/home/$username/smlss/dotfiles/.xinitrc" "/home/$username/.xinitrc"
 
