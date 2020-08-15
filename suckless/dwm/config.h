@@ -110,7 +110,6 @@ static Key keys[] = {
     { MODKEY|ShiftMask,				XK_h,	   spawn,		   SHCMD("st -e htop") },
     { MODKEY,						XK_f,	   spawn,		   SHCMD("firefox") },
     { MODKEY|ShiftMask,				XK_p,	   spawn,		   SHCMD("firefox --private-window") },
-    { MODKEY|ShiftMask,             XK_j,      spawn,          SHCMD("dmenu-javadoc-lookup") },
     { MODKEY,						XK_d,	   spawn,		   SHCMD("current-cmus.sh") },
     { MODKEY,						XK_u,	   spawn,		   SHCMD("tog-intl-key.sh") },
     { MODKEY,						XK_s,	   spawn,		   SHCMD("shoot") },
