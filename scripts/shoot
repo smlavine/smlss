@@ -24,6 +24,8 @@
 # Options:     -d                Prompts for filename with dmenu instead of
 #                                    using timestamp.
 
+picture_path="$HOME/Documents/pictures/screenshots/"
+
 # take picture as soon as possible
 file="$(mktemp)"
 xwd -root | convert xwd:- png:"$file"
@@ -43,5 +45,7 @@ then
 	name="screenshot$(date '+%F.%N')"
 fi
 
-mv "$file" "$HOME/Documents/pictures/screenshots/$name.png"
+[ -d "$picture_path" ] && mv "$file" "$picture_path/$name.png" ||
+	mv "$file" "$HOME/$name.png"
+
 
