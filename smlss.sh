@@ -43,7 +43,7 @@ ln -sf "/home/$username/smlss/dotfiles/.bashrc" "/home/$username/.bashrc"
 ln -sf "/home/$username/smlss/dotfiles/.libao" "/home/$username/.libao"
 ln -sf "/home/$username/smlss/dotfiles/.profile" "/home/$username/.profile"
 ln -sf "/home/$username/smlss/dotfiles/.xinitrc" "/home/$username/.xinitrc"
-ln -s "/home/$username/smlss/dotfiles/nvim" "/home/$username/.config/nvim"
+ln -sf "/home/$username/smlss/dotfiles/nvim" "/home/$username/.config/nvim"
 
 # make pianobar fifo, for use in "scripts/toggle-music-pause.sh"
 mkdir "/home/$username/.config/pianobar"
