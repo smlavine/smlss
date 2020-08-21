@@ -34,6 +34,8 @@ for pkg in $(cat "/home/$username/smlss/packages.txt"); do
     apt -y install "$pkg"
 done
 
+mkdir "/home/$username/.config"
+
 # set up symlinks to config files
 ln -sf "/home/$username/smlss/dotfiles/.bash_aliases" "/home/$username/.bash_aliases"
 ln -sf "/home/$username/smlss/dotfiles/.bash_logout" "/home/$username/.bash_logout"
@@ -41,14 +43,11 @@ ln -sf "/home/$username/smlss/dotfiles/.bashrc" "/home/$username/.bashrc"
 ln -sf "/home/$username/smlss/dotfiles/.libao" "/home/$username/.libao"
 ln -sf "/home/$username/smlss/dotfiles/.profile" "/home/$username/.profile"
 ln -sf "/home/$username/smlss/dotfiles/.xinitrc" "/home/$username/.xinitrc"
+ln -s "/home/$username/smlss/dotfiles/nvim" "/home/$username/.config/nvim"
 
 # make pianobar fifo, for use in "scripts/toggle-music-pause.sh"
 mkdir "/home/$username/.config/pianobar"
 mkfifo "/home/$username/.config/pianobar/ctl"
-
-# links for nvim
-mkdir "/home/$username/.config"
-ln -s "/home/$username/smlss/dotfiles/nvim" "/home/$username/.config/nvim"
 
 # install suckless programs (dwm, st, etc.)
 for item in $(ls -A1 "/home/$username/smlss/suckless")
