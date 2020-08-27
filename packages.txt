@@ -69,6 +69,7 @@ wireless_tools
 wqy-zenhei
 xorg
 xorg-apps
+xorg-xinit
 zathura
 zathura-pdf-mupdf
 zip
