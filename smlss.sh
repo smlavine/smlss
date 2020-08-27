@@ -6,7 +6,7 @@ cd "$HOME"
 
 # install Arch packages in packages.txt
 echo "Installing packages. Enter your root password."
-xargs -a "$HOME/smlss/packages.txt" su -c 'pacman -Syu'
+su -c "xargs -a $HOME/smlss/packages.txt pacman -Syu"
 
 # install Yay AUR helper
 git clone https://aur.archlinux.org/yay.git
