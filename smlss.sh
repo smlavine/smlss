@@ -17,6 +17,9 @@ makepkg -si
 cd "$HOME"
 rm -r "$HOME/yay"
 
+# install AUR packages in aur-packages.txt
+xargs -a "$HOME/smlss/aur-packages.txt" yay -Syu
+
 # set up symlinks to config files
 mkdir  "$HOME/.config"
 ln -sf "$HOME/smlss/dotfiles/.bash_aliases" "$HOME/.bash_aliases"
