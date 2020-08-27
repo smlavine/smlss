@@ -8,12 +8,14 @@ notice and this notice regarding copyright of various aspects of smlss are
 preserved. This file is offered as-is, without any warranty.
 
 smlss.sh, the files in the scripts/ directory, and the files in the dotfiles/
-directory are licensed under the MIT license, unless stated otherwise. 
+directory are licensed under the MIT license (located in the LICENSE file),
+unless stated otherwise. 
 
-Some programs included with smlss are licensed under the copyleft
-[GNU GPL](https://www.gnu.org/licenses/gpl-3.0.html), and thus have their own
-terms to be followed when being distributed.
+The file scripts/extract is written by [Luke Smith](lukesmith.xyz), and is
+licensed under the [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).
 
+See the LICENSE files in the directories of the suckless programs (located in
+the suckless/ directory) for their copyright information.
 
 # About
 
