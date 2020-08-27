@@ -21,6 +21,7 @@ firefox
 flex
 gdb
 gimp
+git
 gnuchess
 handbrake
 handbrake-cli
