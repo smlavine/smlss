@@ -13,7 +13,7 @@ git clone https://aur.archlinux.org/yay.git
 cd "$HOME/yay"
 makepkg -si
 cd "$HOME"
-rm -r "$HOME/yay"
+rm -rf "$HOME/yay"
 
 # install AUR packages in aur-packages.txt
 xargs -a "$HOME/smlss/aur-packages.txt" yay -Syu
