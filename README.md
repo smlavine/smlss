@@ -17,7 +17,7 @@ terms to be followed when being distributed.
 
 # About
 
-This is the script used to setup my Debian GNU/Linux. Feel free to edit
+This is the script used to setup my Arch Linux system. Feel free to edit
 it to your wants and needs. smlss is meant for users who use the terminal
 frequently, program for leisure, and prefer tiling WMs. If you're one of
 those people, great! If not, smlss may not be the best fit, but you're welcome
@@ -36,7 +36,8 @@ rid of them all. So, in July of 2020 I decided to delete the old smlss
 repository and start anew. This had the upside of deleting all bloated files
 trapped in the repository like flies in amber, but had the downside of deleting
 all the commit history from the project. OLD-HISTORY is the output of
-```git log``` before I deleted the old repository.
+```git log```
+before I deleted the old repository.
 
 I still barely know how to use Git -- I only use one master branch, and I
 sometimes push things without realizing they are broken, and then just push
@@ -48,15 +49,17 @@ that are tracked in the repository.
 
 # How to use smlss
 
-1. Install Debian GNU/Linux, netinst version. Don't install anything beyond
-the base system; smlss will deal with all external software.
+1. Install Arch Linux. smlss does not do anything that it expects you would
+have done while installing Arch itself. Follow the
+[Installation Guide](https://wiki.archlinux.org/index.php/Installation_guide)
+for help. In particular, make sure you have installed the ```base``` package.
 
 2. Make sure you are in your home directory (```cd``` should do the trick)
 
 3. Perform the following commands:
 ```
 su # Enter your root password
-apt install git
+pacman -Syu git
 git clone https://gitlab.com/smlavine/smlss.git
 cd smlss
 ./smlss.sh
@@ -67,7 +70,7 @@ cd smlss
 
 smlss performs three main functions:
 
-1. Installs external software after a clean base install of Debian GNU/Linux
+1. Installs software after an install of Arch Linux
 
 2. Manages many user config files in one place, with symlinks to the necessary
 places
@@ -81,15 +84,13 @@ meant to be configured by editing their source code, which is located in the
 
 # What smlss doesn't
 
-smlss is meant to streamline the installation of a fresh Debian GNU/Linux
+smlss is meant to streamline the installation of an Arch Linux
 system. However, there are certain aspects of a system that are better done
 manually. smlss __does not__ do the following:
 
-- Install Debian (you've got to do that on your own)
+- Install Arch Linux, including the ```base``` package, boot loader, etc.
 
 - Install or distribute nonfree software
-
-- Install or distribute graphics drivers
 
 - Configure programs that require some information specific to an individual
 user to function, such as git or thunderbird

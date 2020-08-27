@@ -25,18 +25,11 @@ cd .. # go to home directory
 # ran as root.
 username=$(pwd | cut -c 7-)
 
-
-# switch to unstable repositories
-sed -i 's/buster main/sid main/' /etc/apt/sources.list
-apt update
-# download and install packages in packages.txt
-for pkg in $(cat "/home/$username/smlss/packages.txt"); do
-    apt -y install "$pkg"
-done
-
-mkdir "/home/$username/.config"
+# install packages in packages.txt
+xargs -a "/home/$username/smlss/packages.txt" pacman -Syu
 
 # set up symlinks to config files
+mkdir "/home/$username/.config"
 ln -sf "/home/$username/smlss/dotfiles/.bash_aliases" "/home/$username/.bash_aliases"
 ln -sf "/home/$username/smlss/dotfiles/.bash_logout" "/home/$username/.bash_logout"
 ln -sf "/home/$username/smlss/dotfiles/.bashrc" "/home/$username/.bashrc"
