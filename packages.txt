@@ -16,6 +16,7 @@ dhclient
 diffutils
 dmraid
 fceux
+ffmpeg
 firefox
 flex
 gdb
