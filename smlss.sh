@@ -8,7 +8,6 @@ cd "$HOME"
 echo "Installing packages. Enter your root password."
 su
 xargs -a "$HOME/smlss/packages.txt" pacman -Syu
-exit
 
 # install Yay AUR helper
 git clone https://aur.archlinux.org/yay.git
