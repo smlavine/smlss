@@ -1,5 +1,6 @@
 brogue-ce
 godot
+gtkcord3
 libxft-bgra
 multimc5
 webcamoid
