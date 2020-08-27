@@ -54,15 +54,16 @@ have done while installing Arch itself. Follow the
 [Installation Guide](https://wiki.archlinux.org/index.php/Installation_guide)
 for help. In particular, make sure you have installed the ```base``` package.
 
-2. Make sure you are in your home directory (```cd``` should do the trick)
+2. Log in to your system as the user you are installing smlss as. Make sure you
+are in that user's home directory.
 
 3. Perform the following commands:
 ```
 su # Enter your root password
-pacman -Syu git
+pacman -Syu git # install Git in order to obtain smlss
 git clone https://gitlab.com/smlavine/smlss.git
-cd smlss
-./smlss.sh
+exit
+smlss/smlss.sh
 ```
 
 
@@ -88,7 +89,7 @@ smlss is meant to streamline the installation of an Arch Linux
 system. However, there are certain aspects of a system that are better done
 manually. smlss __does not__ do the following:
 
-- Install Arch Linux, including the ```base``` package, boot loader, etc.
+- Install Arch Linux, including the ```base``` package, kernel, bootloader, etc.
 
 - Install or distribute nonfree software
 

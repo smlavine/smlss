@@ -19,37 +19,34 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-cd .. # go to home directory
-
-# cut the "/home/" from the pwd to get the installer's username, since smlss is
-# ran as root.
-username=$(pwd | cut -c 7-)
+cd "$HOME"
 
 # install packages in packages.txt
-xargs -a "/home/$username/smlss/packages.txt" pacman -Syu
+echo "Installing packages. Enter your root password."
+su
+xargs -a "$HOME/smlss/packages.txt" pacman -Syu
+exit
 
 # set up symlinks to config files
-mkdir "/home/$username/.config"
-ln -sf "/home/$username/smlss/dotfiles/.bash_aliases" "/home/$username/.bash_aliases"
-ln -sf "/home/$username/smlss/dotfiles/.bash_logout" "/home/$username/.bash_logout"
-ln -sf "/home/$username/smlss/dotfiles/.bashrc" "/home/$username/.bashrc"
-ln -sf "/home/$username/smlss/dotfiles/.libao" "/home/$username/.libao"
-ln -sf "/home/$username/smlss/dotfiles/.profile" "/home/$username/.profile"
-ln -sf "/home/$username/smlss/dotfiles/.xinitrc" "/home/$username/.xinitrc"
-ln -sf "/home/$username/smlss/dotfiles/nvim" "/home/$username/.config/nvim"
-ln -sf "/home/$username/smlss/dotfiles/dircolors" "/home/$username/.config/dircolors"
+mkdir  "$HOME/.config"
+ln -sf "$HOME/smlss/dotfiles/.bash_aliases" "$HOME/.bash_aliases"
+ln -sf "$HOME/smlss/dotfiles/.bash_logout"  "$HOME/.bash_logout"
+ln -sf "$HOME/smlss/dotfiles/.bashrc"       "$HOME/.bashrc"
+ln -sf "$HOME/smlss/dotfiles/.libao"        "$HOME/.libao"
+ln -sf "$HOME/smlss/dotfiles/.profile"      "$HOME/.profile"
+ln -sf "$HOME/smlss/dotfiles/.xinitrc"      "$HOME/.xinitrc"
+ln -sf "$HOME/smlss/dotfiles/nvim"          "$HOME/.config/nvim"
+ln -sf "$HOME/smlss/dotfiles/dircolors"     "$HOME/.config/dircolors"
 
 # make pianobar fifo, for use in "scripts/toggle-music-pause.sh"
-mkdir "/home/$username/.config/pianobar"
-mkfifo "/home/$username/.config/pianobar/ctl"
+mkdir  "$HOME/.config/pianobar"
+mkfifo "$HOME/.config/pianobar/ctl"
 
 # install suckless programs (dwm, st, etc.)
-for item in $(ls -A1 "/home/$username/smlss/suckless")
+for item in $(ls -A1 "$HOME/smlss/suckless")
 do
-	cd "/home/$username/smlss/suckless/$item"
-	# suckless programs are installed per-user, not for the entire system;
-	# they must be installed as the primary user.
-    sudo -u $username make install clean
+	cd "$HOME/smlss/suckless/$item"
+    make install clean
 done
 
 # install rust (rustup)
@@ -58,9 +55,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs |
 
 
 # make the installing user the owner of all files created
-cd "/home/$username"
+cd "$HOME"
 shopt -s globstar
-chown "$username" ** -Rh 
-chown "$username" .** -Rh 
-cd "/home/$username/smlss"
+chown "$USER" ** -Rh 
+chown "$USER" .** -Rh 
 
