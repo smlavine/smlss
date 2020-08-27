@@ -20,15 +20,11 @@
 # SOFTWARE.
 #
 # File:        vol
-# Description: Sets the system volume.
+# Description: Gets or sets the system volume.
 # Arguments:   argument to amixer (ex. 40%, 500, 5%+, 6%-)
 
 # if there are no arguments, output the percentage volumes of left/right Master
 [ $# -eq 0 ] &&
-	amixer sget Master | # A paragraph containing lots of sound info
-	sed 1,4d | # Strips to the two lines containing left and right volume
-	awk '{ print $5 }' | # Only print word containing volume percentage
-	tr -s '[]%\n' '.' && # Replace delimiter characters with periods
-	exit
-# else, set the audio according to the first argument
+	amixer sget Master | grep -o '\[[0-9]*%\]' | tr -d '[]%' | paste -sd'|' ||
+# otherwise, set the audio according to the first argument
 amixer -q set Master "$1"
