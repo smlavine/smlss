@@ -63,8 +63,8 @@ are in that user's home directory.
 ```
 su # Enter your root password
 pacman -Syu git # install Git in order to obtain smlss
-git clone https://gitlab.com/smlavine/smlss.git
 exit
+git clone https://gitlab.com/smlavine/smlss.git
 smlss/smlss.sh
 ```
 
