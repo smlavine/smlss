@@ -23,6 +23,7 @@ gdb
 gimp
 git
 gnuchess
+go
 handbrake
 handbrake-cli
 id3v2
