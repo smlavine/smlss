@@ -21,11 +21,18 @@
 
 cd "$HOME"
 
-# install packages in packages.txt
+# install Arch packages in packages.txt
 echo "Installing packages. Enter your root password."
 su
 xargs -a "$HOME/smlss/packages.txt" pacman -Syu
 exit
+
+# install Yay AUR helper
+git clone https://aur.archlinux.org/yay.git
+cd "$HOME/yay"
+makepkg -si
+cd "$HOME"
+rm -r "$HOME/yay"
 
 # set up symlinks to config files
 mkdir  "$HOME/.config"
