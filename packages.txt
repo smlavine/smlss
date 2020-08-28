@@ -65,6 +65,7 @@ transmission-cli
 unrar
 unzip
 vlc
+webkit2gtk
 wireless_tools
 wqy-zenhei
 xorg
