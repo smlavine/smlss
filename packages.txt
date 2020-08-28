@@ -71,6 +71,7 @@ wqy-zenhei
 xorg
 xorg-apps
 xorg-xinit
+youtube-dl
 zathura
 zathura-pdf-mupdf
 zip
