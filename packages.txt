@@ -15,6 +15,7 @@ ddrescue
 dhclient
 diffutils
 dmraid
+ed
 fceux
 ffmpeg
 firefox
