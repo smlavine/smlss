@@ -8,6 +8,11 @@ cd "$HOME"
 echo "Installing packages. Enter your root password."
 su -c "xargs -a $HOME/smlss/packages.txt pacman -Syu"
 
+# give all users in group "wheel" sudo privileges; necessary for yay to install
+# packages properly
+echo "Modifying sudoers file. Enter your root password."
+su -c 'sed -i "s/^# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/" /etc/sudoers'
+
 # install Yay AUR helper
 git clone https://aur.archlinux.org/yay.git
 cd "$HOME/yay"
