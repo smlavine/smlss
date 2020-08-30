@@ -49,6 +49,7 @@ ntfs-3g
 obs-studio
 pavucontrol
 pianobar
+pulseaudio-alsa
 python
 python2
 redshift
