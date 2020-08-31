@@ -32,6 +32,7 @@ ln -sf "$HOME/smlss/dotfiles/.libao"        "$HOME/.libao"
 ln -sf "$HOME/smlss/dotfiles/.profile"      "$HOME/.profile"
 ln -sf "$HOME/smlss/dotfiles/.xinitrc"      "$HOME/.xinitrc"
 ln -sf "$HOME/smlss/dotfiles/nvim"          "$HOME/.config/nvim"
+ln -sf "$HOME/smlss/dotfiles/streamlink"    "$HOME/.config/streamlink"
 ln -sf "$HOME/smlss/dotfiles/dircolors"     "$HOME/.config/dircolors"
 
 # make pianobar fifo, for use in "scripts/toggle-music-pause.sh"
