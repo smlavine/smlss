@@ -29,6 +29,8 @@ handbrake
 handbrake-cli
 id3v2
 imagemagick
+jre8-openjdk
+jre-openjdk
 kdenlive
 libreoffice-fresh
 light
