@@ -1,0 +1,22 @@
+#!/bin/sh
+# Copyright (c) 2020 Sebastian LaVine <seblavine@outlook.com>
+# Licensed under the MIT license. See smlss/LICENSE for details.
+#
+# File: whoislive
+# Description: Out of a list of given Twitch streamers in a given file, prints
+#              the usernames of those that are live.
+# Arguments:   (optional) path to file of list of streamers
+
+usage="Usage: whoislive [file]\nBy default, \$XDG_CONFIG_HOME/whoislive/streamers\nis read, if it exists.\n"
+
+case "$#" in
+	0) file="$XDG_CONFIG_HOME/whoislive/streamers" ;;
+	1) file="$1" ;;
+	*) printf "$usage"; exit ;;
+esac
+
+if [ -f "$file" ]; then
+	xargs -a "$file" parallel-moreutils -i sh -c 'streamlink --config /dev/null --twitch-disable-hosting twitch.tv/{} 2>&1 >/dev/null && echo {}' --
+else
+		printf "$usage\nError: $file does not exist.\n"
+fi
