@@ -49,7 +49,6 @@ networkmanager
 noto-fonts-emoji
 ntfs-3g
 obs-studio
-parallel
 pavucontrol
 pianobar
 pulseaudio-alsa
