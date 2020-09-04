@@ -4,7 +4,7 @@
 #
 # File:        vol
 # Description: Gets or sets the system volume.
-# Arguments:   argument to amixer (ex. 40%, 500, 5%+, 6%-)
+# Arguments:   (optional) argument to amixer (ex. 40%, 500, 5%+, 6%-)
 
 # if there are no arguments, output the percentage volumes of left/right Master
 [ $# -eq 0 ] &&
