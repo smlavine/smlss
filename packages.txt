@@ -27,6 +27,7 @@ gnuchess
 go
 handbrake
 handbrake-cli
+htop
 id3v2
 imagemagick
 jre8-openjdk
