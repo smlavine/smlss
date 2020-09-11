@@ -57,6 +57,7 @@ python
 python2
 python-matplotlib
 python-pip
+python-sympy
 redshift
 renameutils
 sdl2_gfx
