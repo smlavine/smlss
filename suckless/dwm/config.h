@@ -111,7 +111,7 @@ static Key keys[] = {
     { MODKEY,						XK_f,	   spawn,		   SHCMD("firefox") },
     { MODKEY|ShiftMask,				XK_p,	   spawn,		   SHCMD("firefox --private-window") },
     { MODKEY,						XK_d,	   spawn,		   SHCMD("current-cmus.sh") },
-    { MODKEY,						XK_u,	   spawn,		   SHCMD("tog-intl-key.sh") },
+    { MODKEY,						XK_u,	   spawn,		   SHCMD("toggle-intl-key.sh") },
     { MODKEY,						XK_s,	   spawn,		   SHCMD("shoot") },
     { MODKEY,                       XK_w,      spawn,          SHCMD("wicd-client") },
 	{ MODKEY,                       XK_y,      spawn,          SHCMD("view-last-screenshot.sh") },
