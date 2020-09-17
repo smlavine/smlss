@@ -2,6 +2,7 @@ abcde
 acpi
 alsa-utils
 arch-wiki-lite
+asp
 audacity
 base-devel
 bash
