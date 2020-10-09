@@ -12,6 +12,7 @@ checkbashisms
 cmus
 cowsay
 dash
+dateutils
 ddrescue
 dhclient
 diffutils
