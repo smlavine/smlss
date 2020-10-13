@@ -1,8 +1,10 @@
 brogue-ce
+chatterino2-git
 godot
 gtkcord3
 libxft-bgra
 multimc5
 pandoc-bin
 protonvpn-cli-ng
+streamlink-twitch-gui
 webcamoid
