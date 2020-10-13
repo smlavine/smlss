@@ -42,6 +42,7 @@ man-pages
 moreutils
 mpv
 mtpfs
+mupdf
 musescore
 nasm
 neofetch
