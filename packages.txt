@@ -43,6 +43,7 @@ moreutils
 mpv
 mtpfs
 mupdf
+mupdf-tools
 musescore
 nasm
 neofetch
