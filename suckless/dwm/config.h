@@ -115,7 +115,6 @@ static Key keys[] = {
     { MODKEY,						XK_s,	   spawn,		   SHCMD("shoot") },
     { MODKEY,                       XK_w,      spawn,          SHCMD("wicd-client") },
 	{ MODKEY,                       XK_y,      spawn,          SHCMD("view-last-screenshot.sh") },
-	{ MODKEY|ShiftMask,             XK_y,      spawn,          SHCMD("delete-last-screenshot.sh") },
     { MODKEY,                       XK_v,      spawn,          SHCMD("vol 5%-") },
     { MODKEY|ShiftMask,             XK_v,      spawn,          SHCMD("vol 5%+") },
 };
