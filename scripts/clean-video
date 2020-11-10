@@ -1,0 +1,10 @@
+#!/bin/sh
+# Copyright (c) 2020 Sebastian LaVine <seblavine@outlook.com>
+# Licensed under the MIT license. See smlss/LICENSE for details.
+#
+# File: clean-video
+# Description: Filters some background noise from a video; optionally converts
+# the format.
+
+[ "$#" -eq 2 ] && ffmpeg -i "$1" -af "highpass=f=200, lowpass=f=3000" "$2"\
+	|| echo "Usage: clean-video in.format out.format"
