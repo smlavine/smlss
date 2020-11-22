@@ -27,6 +27,7 @@ gimp
 git
 gnuchess
 go
+gthumb
 handbrake
 handbrake-cli
 htop
