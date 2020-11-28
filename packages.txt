@@ -82,6 +82,7 @@ unrar
 unzip
 vlc
 webkit2gtk
+whois
 wireless_tools
 wqy-zenhei
 xorg
