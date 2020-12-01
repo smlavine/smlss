@@ -92,3 +92,4 @@ youtube-dl
 zathura
 zathura-pdf-mupdf
 zip
+usbutils
