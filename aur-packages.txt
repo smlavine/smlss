@@ -1,4 +1,3 @@
-brave-bin
 brogue-ce
 chatterino2-git
 godot
