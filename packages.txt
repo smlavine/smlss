@@ -1,5 +1,6 @@
 abcde
 acpi
+alsa-tools
 alsa-utils
 arch-wiki-lite
 asp
@@ -80,6 +81,7 @@ thunderbird
 transmission-cli
 unrar
 unzip
+usbutils
 vlc
 webkit2gtk
 whois
@@ -92,4 +94,3 @@ youtube-dl
 zathura
 zathura-pdf-mupdf
 zip
-usbutils
