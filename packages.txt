@@ -83,6 +83,7 @@ unrar
 unzip
 usbutils
 vlc
+w3m
 webkit2gtk
 whois
 wireless_tools
