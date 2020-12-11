@@ -69,6 +69,7 @@ python-pip
 python-sympy
 redshift
 renameutils
+rsync
 sdl2_gfx
 sdl_mixer
 sl
