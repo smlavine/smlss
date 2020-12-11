@@ -73,6 +73,7 @@ rsync
 sdl2_gfx
 sdl_mixer
 sl
+slop
 streamlink
 sxiv
 task
