@@ -2,3 +2,4 @@ PATCHES:
 st-dracula-0.8.2.diff
 st-scrollback-0.8.1.diff
 st-solarized-both-0.8.1.diff
+st-w3m-0.8.3.diff
