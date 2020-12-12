@@ -4,10 +4,18 @@ dmenu \- dynamic menu
 .SH SYNOPSIS
 .B dmenu
 .RB [ \-bfiv ]
+.RB [ \-bw
+.IR width ]
 .RB [ \-l
 .IR lines ]
 .RB [ \-m
 .IR monitor ]
+.RB [ \-x
+.IR xoffset ]
+.RB [ \-y
+.IR yoffset ]
+.RB [ \-z
+.IR width ]
 .RB [ \-p
 .IR prompt ]
 .RB [ \-fn
@@ -40,6 +48,9 @@ which lists programs in the user's $PATH and runs the result in their $SHELL.
 .B \-b
 dmenu appears at the bottom of the screen.
 .TP
+.BI \-bw " width"
+sets the width of the border around the dmenu window.
+.TP
 .B \-c
 dmenu appears centered on the screen.
 .TP
@@ -52,6 +63,10 @@ dmenu matches menu items case insensitively.
 .TP
 .BI \-l " lines"
 dmenu lists items vertically, with the given number of lines.
+.TP
+.BI \-m " monitor"
+dmenu is displayed on the monitor number supplied. Monitor numbers are starting
+from 0.
 .TP
 .BI \-x " xoffset"
 dmenu is placed at this offset measured from the left side of the monitor.
@@ -68,15 +83,8 @@ If option
 .B \-m
 is present, the measurement will use the given monitor.
 .TP
-.BI \-w " width"
+.BI \-z " width"
 sets the width of the dmenu window.
-.TP
-.BI \-bw " width"
-sets the width of the border around the dmenu window.
-.TP
-.BI \-m " monitor"
-dmenu is displayed on the monitor number supplied. Monitor numbers are starting
-from 0.
 .TP
 .BI \-p " prompt"
 defines the prompt to be displayed to the left of the input field.

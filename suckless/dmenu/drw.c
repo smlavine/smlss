@@ -5,10 +5,6 @@
 #include <X11/Xlib.h>
 #include <X11/Xft/Xft.h>
 
-#define FC_COLOR "" /* Need something here; FC_COLOR not defined elsewhere.
-                     * Added Sebastian LaVine <seblavine@outlook.com>,
-                     * 2019.04.19. */
-
 #include "drw.h"
 #include "util.h"
 
@@ -99,6 +95,7 @@ drw_free(Drw *drw)
 {
 	XFreePixmap(drw->dpy, drw->drawable);
 	XFreeGC(drw->dpy, drw->gc);
+	drw_fontset_free(drw->fonts);
 	free(drw);
 }
 
