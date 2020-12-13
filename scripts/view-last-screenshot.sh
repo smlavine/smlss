@@ -4,8 +4,6 @@
 #
 # File:        last-screenshot.sh
 # Description: Opens the last screenshot taken in sxiv.
-# Options:     
-# Arguments:
 
 # Directory containing the screenshots.
 screenshot_path="$HOME/Documents/pictures/screenshots/"

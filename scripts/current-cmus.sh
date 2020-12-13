@@ -4,8 +4,6 @@
 #
 # File:        current-cmus.sh
 # Description: Transmits info of current song playing in cmus using dmenu.
-# Options:     
-# Arguments:
 
 get_value()
 {

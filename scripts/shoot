@@ -4,8 +4,8 @@
 #
 # File:        shoot
 # Description: Saves a screenshot as PNG. Intended for use with a keybind.
-# Options:     -d                Prompts for filename with dmenu instead of
-#                                    using timestamp.
+# Options:     -d	Prompts for filename with dmenu instead of
+#                	using timestamp.
 
 picture_path="$HOME/Documents/pictures/screenshots/"
 
