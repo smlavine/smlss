@@ -1,0 +1,39 @@
+#!/bin/sh
+# Copyright (c) 2020 Sebastian LaVine <mail@smlavine.com>
+# Licensed under the GNU GPLv3. See smlss/GPLv3.txt for details.
+#
+# File:        addpackage
+# Description: Add the given package to smlss's install lists.
+# Options:     -a	Add the packages that follow the option to the AUR list.
+
+for x in $@; do
+	if [ "$x" = "-a" ]; then
+		aur="true"
+	else
+		[ "$aur" ] && aurpackages="${aurpackages}${x}\n" ||
+			packages="${packages}${x}\n"
+	fi
+done
+
+cd ~/smlss # temporarily relocate to add to instal lists and to make the commit
+
+[ "$packages" ] &&
+	echo -e "$packages" >> packages.txt &&
+	sort packages.txt | sponge packages.txt &&
+	git add packages.txt
+[ "$aurpackages" ] &&
+	echo -e "$aurpackages" >> aur-packages.txt &&
+	sort aur-packages.txt | sponge aur-packages.txt &&
+	git add aur-packages.txt
+
+packages="$(echo ${packages} | sed 's/\\n/, /g')"
+aurpackages="$(echo ${aurpackages} | sed 's/\\n/, /g')"
+
+commitmsg="Add ${packages}"
+[ "$aurpackages" ] && commitmsg="${commitmsg}(AUR) ${aurpackages}"
+commitmsg="$(echo ${commitmsg} | sed 's/,$//')"
+
+git commit -m "${commitmsg}"
+git push && git push github # You may not have a github remote, but I do.
+
+cd - # teleport home

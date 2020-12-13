@@ -7,9 +7,11 @@ are permitted in any medium without royalty provided the copyright
 notice and this notice regarding copyright of various aspects of smlss are
 preserved. This file is offered as-is, without any warranty.
 
-smlss.sh, the files in the scripts/ directory, and the files in the dotfiles/
-directory are licensed under the MIT license (located in the LICENSE file),
-unless stated otherwise. 
+smlss.sh and the files in the dotfiles/ directory are licensed under the MIT
+license (located in the LICENSE file). Files in the scripts/ directory are
+individually licensed under either the MIT license or under the GPLv3, and you
+should see the copyright notice at the head of each file if such details would
+concern you or your usage of them.
 
 The files scripts/extract and scripts/dmenurecord were originally written by
 [Luke Smith](lukesmith.xyz), and are licensed under the
