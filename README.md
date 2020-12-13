@@ -11,8 +11,9 @@ smlss.sh, the files in the scripts/ directory, and the files in the dotfiles/
 directory are licensed under the MIT license (located in the LICENSE file),
 unless stated otherwise. 
 
-The file scripts/extract is written by [Luke Smith](lukesmith.xyz), and is
-licensed under the [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).
+The files scripts/extract and scripts/dmenurecord were originally written by
+[Luke Smith](lukesmith.xyz), and are licensed under the
+[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).
 
 See the LICENSE files in the directories of the suckless programs (located in
 the suckless/ directory) for their copyright information.
