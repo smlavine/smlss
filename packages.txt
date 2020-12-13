@@ -89,6 +89,7 @@ w3m
 webkit2gtk
 whois
 wireless_tools
+wkhtmltopdf
 wqy-zenhei
 xorg
 xorg-apps
