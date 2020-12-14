@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (c) 2020 Sebastian LaVine <seblavine@outlook.com>
+# Copyright (c) 2020 Sebastian LaVine <mail@smlavine.com>
 # Licensed under the MIT license. See smlss/LICENSE for details.
 #
 # File:        toggle-music-pause.sh
