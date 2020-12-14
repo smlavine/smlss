@@ -7,12 +7,11 @@
 # Options:     -a	Add the packages that follow the option to the AUR list.
 
 for x in $@; do
-	if [ "$x" = "-a" ]; then
-		aur="true"
-	else
-		[ "$aur" ] && aurpackages="${aurpackages}${x}\n" ||
-			packages="${packages}${x}\n"
-	fi
+	case "$x" in
+		"-a") aur="true" ;;
+		*) [ "$aur" ] && aurpackages="${aurpackages}${x}\n" ||
+			packages="${packages}${x}\n" ;;
+	esac
 done
 
 cd ~/smlss # temporarily relocate to add to instal lists and to make the commit
