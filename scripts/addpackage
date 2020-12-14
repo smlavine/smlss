@@ -33,6 +33,5 @@ commitmsg="Add ${packages}"
 commitmsg="$(echo ${commitmsg} | sed 's/,$//')"
 
 git commit -m "${commitmsg}"
-git push && git push github # You may not have a github remote, but I do.
 
 cd - # teleport home
