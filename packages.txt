@@ -1,3 +1,4 @@
+
 abcde
 acpi
 alsa-tools
@@ -59,6 +60,7 @@ noto-fonts-emoji
 ntfs-3g
 obs-studio
 octave
+pass
 pavucontrol
 pianobar
 pulseaudio-alsa
