@@ -5,6 +5,7 @@
 # File:        addpackage
 # Description: Add the given package to smlss's install lists.
 # Options:     -a	Add the packages that follow the option to the AUR list.
+# Arguments:   names of packages to add
 
 for x in $@; do
 	case "$x" in
