@@ -104,19 +104,19 @@ static Key keys[] = {
     TAGKEYS(                        XK_9,                      8)
 
     /* program keybindings */
-    { MODKEY,						XK_p,	   spawn,		   SHCMD("pavucontrol") },
+    { MODKEY,						XK_d,	   spawn,		   SHCMD("current-cmus.sh") },
+    { MODKEY,						XK_f,	   spawn,		   SHCMD("firefox") },
+    { MODKEY|ShiftMask,				XK_h,	   spawn,		   SHCMD("st -e htop") },
     { MODKEY,						XK_m,	   spawn,		   SHCMD("st -e cmus") },
     { MODKEY,						XK_n,	   spawn,		   SHCMD("toggle-music-pause.sh") },
-    { MODKEY|ShiftMask,				XK_h,	   spawn,		   SHCMD("st -e htop") },
-    { MODKEY,						XK_f,	   spawn,		   SHCMD("firefox") },
+    { MODKEY,						XK_p,	   spawn,		   SHCMD("pavucontrol") },
     { MODKEY|ShiftMask,				XK_p,	   spawn,		   SHCMD("firefox --private-window") },
-    { MODKEY,						XK_d,	   spawn,		   SHCMD("current-cmus.sh") },
-    { MODKEY,						XK_u,	   spawn,		   SHCMD("toggle-intl-key.sh") },
     { MODKEY,						XK_s,	   spawn,		   SHCMD("shoot") },
-    { MODKEY,                       XK_w,      spawn,          SHCMD("wicd-client") },
-	{ MODKEY,                       XK_y,      spawn,          SHCMD("view-last-screenshot.sh") },
+    { MODKEY,						XK_u,	   spawn,		   SHCMD("toggle-intl-key.sh") },
     { MODKEY,                       XK_v,      spawn,          SHCMD("vol 5%-") },
     { MODKEY|ShiftMask,             XK_v,      spawn,          SHCMD("vol 5%+") },
+    { MODKEY,                       XK_w,      spawn,          SHCMD("wicd-client") },
+	{ MODKEY,                       XK_y,      spawn,          SHCMD("view-last-screenshot.sh") },
 };
 
 /* button definitions */
