@@ -13,7 +13,9 @@ dpyheight=$(xdpyinfo | awk '/dimensions/ {print $2}' | cut -d'x' -f2)
 
 while getopts "cdh" o; do
 	case "$o" in
-		c) url="$(xclip -selection clipboard -o)" ;;
+		# Look for a URL in all three xclip selections, and choose one which
+		# has "youtu" in it, because all YT URLs have that string.
+		c) url="$(printf "$(xclip -selection p -o)\n$(xclip -selection s -o)\n$(xclip -selection c -o)" | grep youtu | head -1)" ;;
 		d) description="True" ;;
 		*) printf "USAGE: watchyt [-cd] [url]\n" && exit 2 ;;
 	esac
