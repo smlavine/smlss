@@ -5,6 +5,7 @@
 # File:        watchyt
 # Description: Watch the given YouTube video in mpv, using youtube-dl.
 # Options:     -d	Open the description of the video in a pager.
+#              -c	Use the clipboard value as the video URL.
 # Arguments:   URL of the video to watch
 
 dpywidth=$(xdpyinfo | awk '/dimensions/ {print $2}' | cut -d'x' -f1)
@@ -13,11 +14,12 @@ dpyheight=$(xdpyinfo | awk '/dimensions/ {print $2}' | cut -d'x' -f2)
 for x in "$@"; do
 	case "$x" in
 		"-d") description="True" ;;
+		"-c") url="$(xclip -selection clipboard -o)" ;;
 		*) url="$x" ;;
 	esac
 done
 
-mpv --ytdl-raw-options=format="best[height<=?"$dpyheight"][width<=?"$dpywidth"]" \
+mpv --ytdl-raw-options=format="best[height<=?$dpyheight][width<=?$dpywidth]" \
 	ytdl://"$url" &
 	if [ "$description" ]; then
 		descfile="$(mktemp watchyt.XXXXXXXX -p /tmp)"
