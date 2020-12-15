@@ -1,0 +1,28 @@
+#!/bin/sh
+# Copyright (c) 2020 Sebastian LaVine <mail@smlavine.com>
+# Licensed under the GNU GPLv3. See smlss/GPLv3.txt for details.
+#
+# File:        watchyt
+# Description: Watch the given YouTube video in mpv, using youtube-dl.
+# Options:     -d	Open the description of the video in a pager.
+# Arguments:   URL of the video to watch
+
+dpywidth=$(xdpyinfo | awk '/dimensions/ {print $2}' | cut -d'x' -f1)
+dpyheight=$(xdpyinfo | awk '/dimensions/ {print $2}' | cut -d'x' -f2)
+
+for x in "$@"; do
+	case "$x" in
+		"-d") description="True" ;;
+		*) url="$x" ;;
+	esac
+done
+
+mpv --ytdl-raw-options=format="best[height<=?"$dpyheight"][width<=?"$dpywidth"]" \
+	ytdl://"$url" &
+	if [ "$description" ]; then
+		descfile="$(mktemp watchyt.XXXXXXXX -p /tmp)"
+		youtube-dl --get-description "$url" > "$descfile"
+		st -e less "$descfile"
+		rm "$descfile" # Once description window is closed, then delete file.
+	fi && exit # explicit exit call to return to shell after '&' above
+
