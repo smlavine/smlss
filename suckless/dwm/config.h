@@ -109,6 +109,8 @@ static Key keys[] = {
     { MODKEY|ShiftMask,				XK_h,	   spawn,		   SHCMD("st -e htop") },
     { MODKEY,						XK_m,	   spawn,		   SHCMD("st -e cmus") },
     { MODKEY,						XK_n,	   spawn,		   SHCMD("toggle-music-pause.sh") },
+    { MODKEY,						XK_o,	   spawn,		   SHCMD("watchyt -c") },
+    { MODKEY|ShiftMask,				XK_o,	   spawn,		   SHCMD("watchyt -cd") },
     { MODKEY,						XK_p,	   spawn,		   SHCMD("pavucontrol") },
     { MODKEY|ShiftMask,				XK_p,	   spawn,		   SHCMD("firefox --private-window") },
     { MODKEY,						XK_s,	   spawn,		   SHCMD("shoot") },
