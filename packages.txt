@@ -1,4 +1,5 @@
 
+
 abcde
 acpi
 alsa-tools
@@ -24,6 +25,7 @@ fceux
 ffmpeg
 firefox
 flex
+fzf
 gdb
 gimp
 git
