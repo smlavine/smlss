@@ -11,13 +11,19 @@
 dpywidth=$(xdpyinfo | awk '/dimensions/ {print $2}' | cut -d'x' -f1)
 dpyheight=$(xdpyinfo | awk '/dimensions/ {print $2}' | cut -d'x' -f2)
 
-for x in "$@"; do
-	case "$x" in
-		"-d") description="True" ;;
-		"-c") url="$(xclip -selection clipboard -o)" ;;
-		*) url="$x" ;;
+while getopts "cdh" o; do
+	case "$o" in
+		c) url="$(xclip -selection clipboard -o)" ;;
+		d) description="True" ;;
+		*) printf "USAGE: watchyt [-cd] [url]\n" && exit 2 ;;
 	esac
 done
+
+# I didn't know this existed until I read the getopts man page. It's useful!
+shift $(($OPTIND - 1))
+
+# Only set the url if it isnt already set through the clipboard.
+[ "$url" ] || url="$*"
 
 mpv --ytdl-raw-options=format="best[height<=?$dpyheight][width<=?$dpywidth]" \
 	ytdl://"$url" &
