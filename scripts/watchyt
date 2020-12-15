@@ -4,8 +4,8 @@
 #
 # File:        watchyt
 # Description: Watch the given YouTube video in mpv, using youtube-dl.
-# Options:     -d	Open the description of the video in a pager.
-#              -c	Use the clipboard value as the video URL.
+# Options:     -c	Use the clipboard value as the video URL.
+#              -d	Open the description of the video in a pager.
 # Arguments:   URL of the video to watch
 
 dpywidth=$(xdpyinfo | awk '/dimensions/ {print $2}' | cut -d'x' -f1)
