@@ -1,5 +1,3 @@
-
-
 abcde
 acpi
 alsa-tools
