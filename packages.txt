@@ -69,6 +69,7 @@ python2
 python-matplotlib
 python-pip
 python-sympy
+qutebrowser
 redshift
 renameutils
 rsync
