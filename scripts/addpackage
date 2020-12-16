@@ -4,34 +4,33 @@
 #
 # File:        addpackage
 # Description: Add the given package to smlss's install lists.
-# Options:     -a	Add the packages that follow the option to the AUR list.
+# Options:     -a	Add packages to the AUR list, not the Arch list.
 # Arguments:   names of packages to add
 
-for x in $@; do
-	case "$x" in
-		"-a") aur="true" ;;
-		*) [ "$aur" ] && aurpackages="${aurpackages}${x}\n" ||
-			packages="${packages}${x}\n" ;;
+options="ah"
+while getopts "$options" o; do
+	case "$o" in
+		a) aur="True" ;;
+		*) echo "USAGE: addpackage [-$options] packages..." && exit ;;
 	esac
 done
 
+shift $(($OPTIND - 1))
+packages="$(echo "$*" | tr ' ' '\n')"
+file='packages.txt'
+[ "$aur" ] && file="aur-$file"
 cd ~/smlss # temporarily relocate to add to install lists and to make the commit
 
-[ "$packages" ] &&
-	echo -e "$packages" >> packages.txt &&
-	sort packages.txt | sponge packages.txt &&
-	git add packages.txt
-[ "$aurpackages" ] &&
-	echo -e "$aurpackages" >> aur-packages.txt &&
-	sort aur-packages.txt | sponge aur-packages.txt &&
-	git add aur-packages.txt
+echo -e "$packages" >> $file &&
+	sort $file | sponge $file &&
+	git add $file
 
-packages="$(echo ${packages} | sed 's/\\n/, /g')"
-aurpackages="$(echo ${aurpackages} | sed 's/\\n/, /g')"
+# Change newlines to commas to make the list presentable for a git commit
+packages="$(echo $packages | sed 's/\\n/, /g')"
 
-commitmsg="Add ${packages}"
-[ "$aurpackages" ] && commitmsg="${commitmsg}(AUR) ${aurpackages}"
-commitmsg="$(echo ${commitmsg} | sed 's/,$//')"
+commitmsg="Add $packages"
+# Remove trailing comma from package list
+commitmsg="$(echo $commitmsg | sed 's/,$//')"
 
 git commit -vem "$commitmsg"
 
