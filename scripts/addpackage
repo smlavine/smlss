@@ -33,6 +33,7 @@ commitmsg="Add ${packages}"
 [ "$aurpackages" ] && commitmsg="${commitmsg}(AUR) ${aurpackages}"
 commitmsg="$(echo ${commitmsg} | sed 's/,$//')"
 
-git commit -m "${commitmsg}"
+git commit -vem "$commitmsg"
 
 cd - # teleport home
+
