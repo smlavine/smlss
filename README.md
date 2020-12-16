@@ -1,6 +1,6 @@
 # Copyright
 
-Copyright (C) 2019-2020 Sebastian LaVine <seblavine@outlook.com>
+Copyright (C) 2019-2020 Sebastian LaVine <mail@smlavine.com>
 
 Copying and distribution of this file, with or without modification,
 are permitted in any medium without royalty provided the copyright
