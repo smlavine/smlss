@@ -1,5 +1,4 @@
 /* See LICENSE file for copyright and license details. */
-/* Modified by Sebastian LaVine <seblavine@outlook.com> */
 
 #include "gaplessgrid.c"
 #include "fibonacci.c"

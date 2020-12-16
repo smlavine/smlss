@@ -109,7 +109,7 @@ better off forking the project and adding what you'd like on your own.
 
 # Contact
 
-To contact me, Sebastian LaVine, send an email to <seblavine@outlook.com>.
+To contact me, Sebastian LaVine, send an email to <mail@smlavine.com>.
 
 
 # FAQ (Feverishly Avoided Queries)
