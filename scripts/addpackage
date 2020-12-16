@@ -15,7 +15,7 @@ for x in $@; do
 	esac
 done
 
-cd ~/smlss # temporarily relocate to add to instal lists and to make the commit
+cd ~/smlss # temporarily relocate to add to install lists and to make the commit
 
 [ "$packages" ] &&
 	echo -e "$packages" >> packages.txt &&
