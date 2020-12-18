@@ -1,6 +1,6 @@
 #!/bin/sh
 # Copyright (c) 2019-2020 Sebastian LaVine <mail@smlavine.com>
-# Licensed under the MIT license. See smlss/LICENSE for details.
+# Licensed under the MIT license. See smlss/MIT.txt for details.
 #
 # File:        dmenu-quit-dwm.sh
 # Description: Quits dwm, but first prompts the user with a dmenu prompt asking

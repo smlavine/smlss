@@ -7,15 +7,14 @@ are permitted in any medium without royalty provided the copyright
 notice and this notice regarding copyright of various aspects of smlss are
 preserved. This file is offered as-is, without any warranty.
 
-smlss.sh and the files in the dotfiles/ directory are licensed under the MIT
-license (located in the LICENSE file). Files in the scripts/ directory are
-individually licensed under either the MIT license or under the GPLv3, and you
-should see the copyright notice at the head of each file if such details would
-concern you or your usage of them.
+smlss.sh is licensed under the
+[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html), which can be found in
+smlss/GPLv3.  Files in the scripts/ directory are individually licensed under
+either the MIT license (which can be found in smlss/MIT.txt) or under the GPLv3.
+See the copyright notice at the head of each file for details.
 
 The files scripts/extract and scripts/dmenurecord were originally written by
-[Luke Smith](lukesmith.xyz), and are licensed under the
-[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).
+[Luke Smith](lukesmith.xyz), and are licensed under the GPLv3.
 
 See the LICENSE files in the directories of the suckless programs (located in
 the suckless/ directory) for their copyright information.
@@ -119,11 +118,6 @@ Q: Why is _feature X_ broken?
 A: Because I broke it. Oops. Make an issue on the GitHub/GitLab page.
 
 
-Q: Can I fork this project?
+Q: Can I fork or modify this project?
 
-A: Yes, please do! Most software included in smlss is licensed under the MIT
-license, however some (such as the "extract" script) is licensed under the
-[GNU GPL](https://www.gnu.org/licenses/gpl-3.0.html), which has stricter
-"copyleft" terms to be followed when software licensed under it is distributed
-or modified.
-
+A: Yes, please do! Please be mindful of the terms of the GPLv3 and MIT licenses.

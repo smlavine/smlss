@@ -1,6 +1,6 @@
 #!/bin/sh
 # Copyright (c) 2019-2020 Sebastian LaVine <mail@smlavine.com>
-# Licensed under the MIT license. See smlss/LICENSE for details.
+# Licensed under the MIT license. See smlss/MIT.txt for details.
 #
 # File:        last-screenshot.sh
 # Description: Opens the last screenshot taken in sxiv.

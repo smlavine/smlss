@@ -1,27 +1,25 @@
 #!/bin/bash
 # Copyright (c) 2019-2020 Sebastian LaVine <mail@smlavine.com>
-# Licensed under the MIT license. See LICENSE for details.
+# Licensed under the GNU GPLv3. See smlss/GPLv3.txt for details.
 
 cd "$HOME"
-
-# install Arch packages in packages.txt
-echo "Installing packages. Enter your root password."
-su -c "xargs -a $HOME/smlss/packages.txt pacman -Syu"
 
 # give all users in group "wheel" sudo privileges; necessary for yay to install
 # packages properly
 echo "Modifying sudoers file. Enter your root password."
 su -c 'sed -i "s/^# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/" /etc/sudoers'
 
-# install Yay AUR helper
-git clone https://aur.archlinux.org/yay.git
-cd "$HOME/yay"
-makepkg -si
-cd "$HOME"
-rm -rf "$HOME/yay"
+# install Yay AUR helper, but only if it isn't already installed.
+which yay && echo 'Yay already installed, skipping.' ||
+	git clone https://aur.archlinux.org/yay.git &&
+	cd "$HOME/yay" &&
+	makepkg -si &&
+	cd "$HOME" &&
+	rm -rf "$HOME/yay"
 
-# install AUR packages in aur-packages.txt
-xargs -a "$HOME/smlss/aur-packages.txt" yay -Syu
+# install Arch and AUR packages in packages.txt and aur-packages.txt
+# explicitly NO QUOTES here: they prevent the brace expansion from working
+cat $HOME/smlss/{aur-,}packages.txt | xargs yay -Syu --needed
 
 # set up symlinks to config files
 mkdir  "$HOME/.config"

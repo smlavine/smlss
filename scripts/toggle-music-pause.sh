@@ -1,6 +1,6 @@
 #!/bin/sh
 # Copyright (c) 2020 Sebastian LaVine <mail@smlavine.com>
-# Licensed under the MIT license. See smlss/LICENSE for details.
+# Licensed under the MIT license. See smlss/MIT.txt for details.
 #
 # File:        toggle-music-pause.sh
 # Description: Toggles music playback, if music is playing in either pianobar or
