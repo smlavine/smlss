@@ -4,7 +4,8 @@
 # Default behavior: Extract archive into new directory
 # Behavior with `-c` option: Extract contents into current directory
 #
-# Written by Luke Smtih. Licensed under GPLv3.
+# Written by Luke Smith, modified by Sebastian LaVine.
+# Licensed under the GNU GPLv3. See smlss/GPLv3.txt for details.
 
 
 while getopts "hc" o; do case "${o}" in

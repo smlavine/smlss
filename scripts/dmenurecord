@@ -9,7 +9,8 @@
 #
 # If there is already a running instance, user will be prompted to end it.
 #
-# Written by Luke Smith, modified by Sebastian LaVine. Licensed under GPLv3.
+# Written by Luke Smith, modified by Sebastian LaVine.
+# Licensed under the GNU GPLv3. See smlss/GPLv3.txt for details.
 
 killrecording() {
 	recpid="$(cat /tmp/recordingpid)"
