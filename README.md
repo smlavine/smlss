@@ -64,7 +64,7 @@ are in that user's home directory.
 3. Perform the following commands:
 ```
 su # Enter your root password
-pacman -Syu git # install Git in order to obtain smlss
+pacman -S git # install Git in order to obtain smlss
 exit
 git clone https://gitlab.com/smlavine/smlss.git
 smlss/smlss.sh
