@@ -62,6 +62,7 @@ ntfs-3g
 obs-studio
 octave
 pass
+pass-otp
 pavucontrol
 pianobar
 pulseaudio-alsa
