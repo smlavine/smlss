@@ -45,11 +45,6 @@ do
     make install clean
 done
 
-# install rust (rustup)
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs |
-	sh -s -- -y --no-modify-path # rust env-vars already in PATH, in .profile
-
-
 # make the installing user the owner of all files created
 cd "$HOME"
 shopt -s globstar

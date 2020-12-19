@@ -73,6 +73,7 @@ qutebrowser
 redshift
 renameutils
 rsync
+rustup
 sdl2_gfx
 sdl_mixer
 sl
