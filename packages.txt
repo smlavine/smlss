@@ -7,6 +7,7 @@ asp
 audacity
 base-devel
 bash
+bash-completion
 calc
 cdparanoia
 checkbashisms
