@@ -34,8 +34,8 @@ ln -sf "$HOME/smlss/dotfiles/dircolors"     "$HOME/.config/dircolors"
 ln -sf "$HOME/smlss/dotfiles/default.pa"    "$HOME/.config/pulse/default.pa"
 
 # make pianobar fifo, for use in "scripts/toggle-music-pause.sh"
-mkdir  "$HOME/.config/pianobar"
-mkfifo "$HOME/.config/pianobar/ctl"
+[ -d "$HOME/.config/pianobar" ] || (mkdir "$HOME/.config/pianobar" &&
+	mkfifo "$HOME/.config/pianobar/ctl")
 
 # install suckless programs (dwm, st, etc.)
 for item in $(ls -A1 "$HOME/smlss/suckless")
