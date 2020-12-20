@@ -23,8 +23,8 @@ cat $HOME/smlss/{aur-,}packages.txt | xargs yay -Syu --needed
 
 # set up symlinks to config files
 mkdir  "$HOME/.config"
-ln -sf "$HOME/smlss/dotfiles/.bash_aliases" "$HOME/.bash_aliases"
 ln -sf "$HOME/smlss/dotfiles/.bashrc"       "$HOME/.bashrc"
+ln -sf "$HOME/smlss/dotfiles/bash"          "$HOME/.config/bash"
 ln -sf "$HOME/smlss/dotfiles/.libao"        "$HOME/.libao"
 ln -sf "$HOME/smlss/dotfiles/.profile"      "$HOME/.profile"
 ln -sf "$HOME/smlss/dotfiles/.xinitrc"      "$HOME/.xinitrc"
