@@ -19,6 +19,7 @@ which yay && echo 'Yay already installed, skipping.' ||
 
 # install Arch and AUR packages in packages.txt and aur-packages.txt
 # explicitly NO QUOTES here: they prevent the brace expansion from working
+echo "Installing packages. Enter your root password."
 cat $HOME/smlss/{aur-,}packages.txt | xargs yay -Syu --needed
 
 # set up symlinks to config files
