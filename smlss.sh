@@ -44,9 +44,4 @@ do
     make install clean
 done
 
-# make the installing user the owner of all files created
-cd "$HOME"
-shopt -s globstar
-chown "$USER" ** -Rh 
-chown "$USER" .** -Rh 
-
+echo "smlss complete."
