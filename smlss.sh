@@ -34,28 +34,28 @@ which yay && echo 'Yay already installed, skipping.' ||
 # install Arch and AUR packages in packages.txt and aur-packages.txt
 # explicitly NO QUOTES here: they prevent the brace expansion from working
 echo "Installing packages. Enter your root password."
-cat $HOME/smlss/{aur-,}packages.txt | xargs yay -Syu --needed
+cat $SMLSS_DIR/{aur-,}packages.txt | xargs yay -Syu --needed
 
 # set up symlinks to config files
 mkdir  "$HOME/.config"
-ln -sfT "$HOME/smlss/dotfiles/.bashrc"       "$HOME/.bashrc"
-ln -sfT "$HOME/smlss/dotfiles/bash"          "$HOME/.config/bash"
-ln -sfT "$HOME/smlss/dotfiles/.libao"        "$HOME/.libao"
-ln -sfT "$HOME/smlss/dotfiles/.profile"      "$HOME/.profile"
-ln -sfT "$HOME/smlss/dotfiles/.xinitrc"      "$HOME/.xinitrc"
-ln -sfT "$HOME/smlss/dotfiles/nvim"          "$HOME/.config/nvim"
-ln -sfT "$HOME/smlss/dotfiles/streamlink"    "$HOME/.config/streamlink"
-ln -sfT "$HOME/smlss/dotfiles/dircolors"     "$HOME/.config/dircolors"
-ln -sfT "$HOME/smlss/dotfiles/default.pa"    "$HOME/.config/pulse/default.pa"
+ln -sfT "$SMLSS_DIR/dotfiles/.bashrc"       "$HOME/.bashrc"
+ln -sfT "$SMLSS_DIR/dotfiles/bash"          "$HOME/.config/bash"
+ln -sfT "$SMLSS_DIR/dotfiles/.libao"        "$HOME/.libao"
+ln -sfT "$SMLSS_DIR/dotfiles/.profile"      "$HOME/.profile"
+ln -sfT "$SMLSS_DIR/dotfiles/.xinitrc"      "$HOME/.xinitrc"
+ln -sfT "$SMLSS_DIR/dotfiles/nvim"          "$HOME/.config/nvim"
+ln -sfT "$SMLSS_DIR/dotfiles/streamlink"    "$HOME/.config/streamlink"
+ln -sfT "$SMLSS_DIR/dotfiles/dircolors"     "$HOME/.config/dircolors"
+ln -sfT "$SMLSS_DIR/dotfiles/default.pa"    "$HOME/.config/pulse/default.pa"
 
 # make pianobar fifo, for use in "scripts/toggle-music-pause.sh"
 [ -d "$HOME/.config/pianobar" ] || (mkdir "$HOME/.config/pianobar" &&
 	mkfifo "$HOME/.config/pianobar/ctl")
 
 # install suckless programs (dwm, st, etc.)
-for item in $(ls -A1 "$HOME/smlss/suckless")
+for item in $(ls -A1 "$SMLSS_DIR/suckless")
 do
-	cd "$HOME/smlss/suckless/$item"
+	cd "$SMLSS_DIR/suckless/$item"
     make install clean
 done
 

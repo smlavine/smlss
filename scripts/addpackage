@@ -19,7 +19,7 @@ shift $(($OPTIND - 1))
 packages="$(echo "$*" | tr ' ' '\n')"
 file='packages.txt'
 [ "$aur" ] && file="aur-$file"
-cd ~/smlss # temporarily relocate to add to install lists and to make the commit
+cd "$SMLSS_DIR" # temporarily relocate to add to install lists and to make the commit
 
 echo -e "$packages" >> $file &&
 	sort $file | sponge $file &&
