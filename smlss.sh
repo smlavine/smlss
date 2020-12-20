@@ -2,6 +2,7 @@
 # Copyright (c) 2019-2020 Sebastian LaVine <mail@smlavine.com>
 # Licensed under the GNU GPLv3. See smlss/GPLv3.txt for details.
 
+# It is important to be in $HOME so that paths work properly.
 cd "$HOME"
 
 # give all users in group "wheel" sudo privileges; necessary for yay to install
