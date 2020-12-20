@@ -5,8 +5,21 @@
 # It is important to be in $HOME so that paths work properly.
 cd "$HOME"
 
-# give all users in group "wheel" sudo privileges; necessary for yay to install
-# packages properly
+# The user may not download smlss to the place that it is ultimately supposed to
+# be. We should move the directory to the path specified by $SMLSS_DIR in
+# dotfiles/bash/env_vars.
+currentsmlss="$(realpath $(dirname "$0"))"
+. "$currentsmlss/dotfiles/bash/env_vars"
+if [ "$currentsmlss" != "$(realpath -m "$SMLSS_DIR")" ]; then
+	printf "Moving smlss/ to $(realpath -m "$SMLSS_DIR")..."
+	mkdir -p "$(realpath -m $SMLSS_DIR)"
+	mv "$currentsmlss" "$(realpath -m $SMLSS_DIR)"
+	echo 'done.'
+fi
+exit
+
+# Give all users in group "wheel" sudo privileges; This is necessary for yay to
+# install packages properly, and is desirable anyway.
 echo "Modifying sudoers file. Enter your root password."
 su -c 'sed -i "s/^# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/" /etc/sudoers'
 
