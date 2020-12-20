@@ -11,11 +11,11 @@ su -c 'sed -i "s/^# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/" /etc/sudoers'
 
 # Install Yay AUR helper, but only if it isn't already installed.
 which yay && echo 'Yay already installed, skipping.' ||
-	git clone https://aur.archlinux.org/yay.git &&
+	(git clone https://aur.archlinux.org/yay.git &&
 	cd "$HOME/yay" &&
 	makepkg -si &&
 	cd "$HOME" &&
-	rm -rf "$HOME/yay"
+	rm -rf "$HOME/yay")
 
 # install Arch and AUR packages in packages.txt and aur-packages.txt
 # explicitly NO QUOTES here: they prevent the brace expansion from working
