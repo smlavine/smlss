@@ -24,15 +24,15 @@ cat $HOME/smlss/{aur-,}packages.txt | xargs yay -Syu --needed
 
 # set up symlinks to config files
 mkdir  "$HOME/.config"
-ln -sf "$HOME/smlss/dotfiles/.bashrc"       "$HOME/.bashrc"
-ln -sf "$HOME/smlss/dotfiles/bash"          "$HOME/.config/bash"
-ln -sf "$HOME/smlss/dotfiles/.libao"        "$HOME/.libao"
-ln -sf "$HOME/smlss/dotfiles/.profile"      "$HOME/.profile"
-ln -sf "$HOME/smlss/dotfiles/.xinitrc"      "$HOME/.xinitrc"
-ln -sf "$HOME/smlss/dotfiles/nvim"          "$HOME/.config/nvim"
-ln -sf "$HOME/smlss/dotfiles/streamlink"    "$HOME/.config/streamlink"
-ln -sf "$HOME/smlss/dotfiles/dircolors"     "$HOME/.config/dircolors"
-ln -sf "$HOME/smlss/dotfiles/default.pa"    "$HOME/.config/pulse/default.pa"
+ln -sfT "$HOME/smlss/dotfiles/.bashrc"       "$HOME/.bashrc"
+ln -sfT "$HOME/smlss/dotfiles/bash"          "$HOME/.config/bash"
+ln -sfT "$HOME/smlss/dotfiles/.libao"        "$HOME/.libao"
+ln -sfT "$HOME/smlss/dotfiles/.profile"      "$HOME/.profile"
+ln -sfT "$HOME/smlss/dotfiles/.xinitrc"      "$HOME/.xinitrc"
+ln -sfT "$HOME/smlss/dotfiles/nvim"          "$HOME/.config/nvim"
+ln -sfT "$HOME/smlss/dotfiles/streamlink"    "$HOME/.config/streamlink"
+ln -sfT "$HOME/smlss/dotfiles/dircolors"     "$HOME/.config/dircolors"
+ln -sfT "$HOME/smlss/dotfiles/default.pa"    "$HOME/.config/pulse/default.pa"
 
 # make pianobar fifo, for use in "scripts/toggle-music-pause.sh"
 [ -d "$HOME/.config/pianobar" ] || (mkdir "$HOME/.config/pianobar" &&
