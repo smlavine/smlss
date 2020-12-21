@@ -7,9 +7,9 @@ cd "$HOME"
 
 # The user may not download smlss to the place that it is ultimately supposed to
 # be. We should move the directory to the path specified by $SMLSS_DIR in
-# dotfiles/bash/env_vars.
+# dots/bash/env_vars.
 currentsmlss="$(realpath $(dirname "$0"))"
-. "$currentsmlss/dotfiles/bash/env_vars"
+. "$currentsmlss/dots/bash/env_vars"
 if [ "$currentsmlss" != "$(realpath -m "$SMLSS_DIR")" ]; then
 	printf "Moving smlss/ to $(realpath -m "$SMLSS_DIR")..."
 	mkdir -p "$(realpath -m $SMLSS_DIR)"
@@ -37,15 +37,15 @@ cat $SMLSS_DIR/{aur-,}packages.txt | xargs yay -Syu --needed
 
 # set up symlinks to config files
 mkdir  "$HOME/.config"
-ln -sfT "$SMLSS_DIR/dotfiles/.bashrc"       "$HOME/.bashrc"
-ln -sfT "$SMLSS_DIR/dotfiles/bash"          "$HOME/.config/bash"
-ln -sfT "$SMLSS_DIR/dotfiles/.libao"        "$HOME/.libao"
-ln -sfT "$SMLSS_DIR/dotfiles/.profile"      "$HOME/.profile"
-ln -sfT "$SMLSS_DIR/dotfiles/.xinitrc"      "$HOME/.xinitrc"
-ln -sfT "$SMLSS_DIR/dotfiles/nvim"          "$HOME/.config/nvim"
-ln -sfT "$SMLSS_DIR/dotfiles/streamlink"    "$HOME/.config/streamlink"
-ln -sfT "$SMLSS_DIR/dotfiles/dircolors"     "$HOME/.config/dircolors"
-ln -sfT "$SMLSS_DIR/dotfiles/default.pa"    "$HOME/.config/pulse/default.pa"
+ln -sfT "$SMLSS_DIR/dots/.bashrc"       "$HOME/.bashrc"
+ln -sfT "$SMLSS_DIR/dots/bash"          "$HOME/.config/bash"
+ln -sfT "$SMLSS_DIR/dots/.libao"        "$HOME/.libao"
+ln -sfT "$SMLSS_DIR/dots/.profile"      "$HOME/.profile"
+ln -sfT "$SMLSS_DIR/dots/.xinitrc"      "$HOME/.xinitrc"
+ln -sfT "$SMLSS_DIR/dots/nvim"          "$HOME/.config/nvim"
+ln -sfT "$SMLSS_DIR/dots/streamlink"    "$HOME/.config/streamlink"
+ln -sfT "$SMLSS_DIR/dots/dircolors"     "$HOME/.config/dircolors"
+ln -sfT "$SMLSS_DIR/dots/default.pa"    "$HOME/.config/pulse/default.pa"
 
 # make pianobar fifo, for use in "scripts/toggle-music-pause.sh"
 [ -d "$HOME/.config/pianobar" ] || (mkdir "$HOME/.config/pianobar" &&
