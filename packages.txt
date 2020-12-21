@@ -103,5 +103,5 @@ xorg-apps
 xorg-xinit
 youtube-dl
 zathura
-zathura-pdf-mupdf
+zathura-pdf-poppler
 zip
