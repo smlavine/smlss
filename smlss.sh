@@ -16,7 +16,6 @@ if [ "$currentsmlss" != "$(realpath -m "$SMLSS_DIR")" ]; then
 	mv "$currentsmlss" "$(realpath -m $SMLSS_DIR)"
 	echo 'done.'
 fi
-exit
 
 # Give all users in group "wheel" sudo privileges; This is necessary for yay to
 # install packages properly, and is desirable anyway.
