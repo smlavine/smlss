@@ -5,7 +5,7 @@
 # File:        watchyt
 # Description: Watch the given YouTube video in mpv, using youtube-dl.
 # Options:     -c	Use the clipboard value as the video URL.
-#              -d	Open the description of the video in a pager.
+#              -d	Open the video description in less. (don't launch mpv)
 # Arguments:   URL of the video to watch
 
 dpywidth=$(xdpyinfo | awk '/dimensions/ {print $2}' | cut -d'x' -f1)
@@ -27,12 +27,14 @@ shift $(($OPTIND - 1))
 # Only set the url if it isnt already set through the clipboard.
 [ "$url" ] || url="$*"
 
+if [ "$description" ]; then
+	descfile="$(mktemp watchyt.XXXXXXXX -p /tmp)"
+	youtube-dl --get-description "$url" > "$descfile"
+	st -e less "$descfile"
+	rm "$descfile" # Once less is closed, then delete file.
+	exit # Don't open the video in mpv.
+fi
+
 mpv --ytdl-raw-options=format="best[height<=?$dpyheight][width<=?$dpywidth]" \
 	ytdl://"$url" &
-	if [ "$description" ]; then
-		descfile="$(mktemp watchyt.XXXXXXXX -p /tmp)"
-		youtube-dl --get-description "$url" > "$descfile"
-		st -e less "$descfile"
-		rm "$descfile" # Once description window is closed, then delete file.
-	fi && exit # explicit exit call to return to shell after '&' above
 
