@@ -38,6 +38,7 @@ id3v2
 imagemagick
 jdk8-openjdk
 jdk-openjdk
+jq
 jre8-openjdk
 jre-openjdk
 kdenlive
