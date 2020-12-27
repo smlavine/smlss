@@ -42,6 +42,7 @@ jq
 jre8-openjdk
 jre-openjdk
 kdenlive
+lesspipe
 libreoffice-fresh
 light
 man-db
