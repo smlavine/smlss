@@ -2,9 +2,6 @@
 # Copyright (c) 2019-2020 Sebastian LaVine <mail@smlavine.com>
 # Licensed under the GNU GPLv3. See smlss/GPLv3.txt for details.
 
-# It is important to be in $HOME so that paths work properly.
-cd "$HOME"
-
 # The user may not download smlss to the place that it is ultimately supposed to
 # be. We should move the directory to the path specified by $SMLSS_DIR in
 # dots/bash/env_vars.
