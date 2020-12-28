@@ -16,6 +16,9 @@ See the copyright notice at the head of each file for details.
 The files scripts/extract and scripts/dmenurecord were originally written by
 [Luke Smith](lukesmith.xyz), and are licensed under the GPLv3.
 
+The file dots/.bash\_completion was originally written by
+[cykerway](https://github.com/cykerway), and is licensed under the GPLv3.
+
 See the LICENSE files in the directories of the suckless programs (located in
 the suckless/ directory) for their copyright information.
 
