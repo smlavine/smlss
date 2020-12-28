@@ -27,6 +27,13 @@ frequently, program for leisure, and prefer tiling WMs. If you're one of
 those people, great! If not, smlss may not be the best fit, but you're welcome
 to try it out.
 
+**NOTE:** smlss is frequently changed to reflect what I personally want it to do
+without much regard for how this effects anyone else who expects any sort of
+stability out of it. Commits are often pushed with little to no testing done,
+especially on other machines or new installs. *Things will break*. While the
+goal of smlss is for it to be as drop-in as possible, it is entirely possible
+that if you go in expecting a seamless experience,
+[you're gonna have a bad time.](https://smlavine.com/images/sans.jpg)
 
 ## OLD-HISTORY
 
