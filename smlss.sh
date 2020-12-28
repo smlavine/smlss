@@ -33,21 +33,21 @@ echo "Installing packages. Enter your root password."
 cat $SMLSS_DIR/{aur-,}packages.txt | xargs yay -Syu --needed
 
 # set up symlinks to config files
-mkdir  "$HOME/.config"
+mkdir  "$XDG_CONFIG_HOME"
 ln -sfT "$SMLSS_DIR/dots/.bashrc"            "$HOME/.bashrc"
-ln -sfT "$SMLSS_DIR/dots/bash"               "$HOME/.config/bash"
+ln -sfT "$SMLSS_DIR/dots/bash"               "$XDG_CONFIG_HOME/bash"
 ln -sfT "$SMLSS_DIR/dots/bash_completion"    "$BASH_COMPLETION_USER_FILE"
 ln -sfT "$SMLSS_DIR/dots/.libao"             "$HOME/.libao"
 ln -sfT "$SMLSS_DIR/dots/.profile"           "$HOME/.profile"
 ln -sfT "$SMLSS_DIR/dots/.xinitrc"           "$HOME/.xinitrc"
-ln -sfT "$SMLSS_DIR/dots/nvim"               "$HOME/.config/nvim"
-ln -sfT "$SMLSS_DIR/dots/streamlink"         "$HOME/.config/streamlink"
-ln -sfT "$SMLSS_DIR/dots/dircolors"          "$HOME/.config/dircolors"
-ln -sfT "$SMLSS_DIR/dots/default.pa"         "$HOME/.config/pulse/default.pa"
+ln -sfT "$SMLSS_DIR/dots/nvim"               "$XDG_CONFIG_HOME/nvim"
+ln -sfT "$SMLSS_DIR/dots/streamlink"         "$XDG_CONFIG_HOME/streamlink"
+ln -sfT "$SMLSS_DIR/dots/dircolors"          "$XDG_CONFIG_HOME/dircolors"
+ln -sfT "$SMLSS_DIR/dots/default.pa"         "$XDG_CONFIG_HOME/pulse/default.pa"
 
 # make pianobar fifo, for use in "scripts/toggle-music-pause.sh"
-[ -d "$HOME/.config/pianobar" ] || (mkdir "$HOME/.config/pianobar" &&
-	mkfifo "$HOME/.config/pianobar/ctl")
+[ -d "$XDG_CONFIG_HOME/pianobar" ] || (mkdir "$XDG_CONFIG_HOME/pianobar" &&
+	mkfifo "$XDG_CONFIG_HOME/pianobar/ctl")
 
 # install suckless programs (dwm, st, etc.)
 for item in $(ls -A1 "$SMLSS_DIR/suckless")
