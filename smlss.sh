@@ -7,12 +7,12 @@
 # dots/bash/env_vars.
 currentsmlss="$(realpath $(dirname "$0"))"
 . "$currentsmlss/dots/bash/env_vars"
-#if [ "$currentsmlss" != "$(realpath -m "$SMLSS_DIR")" ]; then
-#	printf "Moving smlss/ to $(realpath -m "$SMLSS_DIR")..."
-#	mkdir -p "$(realpath -m $SMLSS_DIR)"
-#	mv "$currentsmlss" "$(realpath -m $SMLSS_DIR)"
-#	echo 'done.'
-#fi
+if [ "$currentsmlss" != "$(realpath -m "$SMLSS_DIR")" ]; then
+	printf "Moving smlss/ to "$(realpath -m "$SMLSS_DIR")"..."
+	mkdir -p "$(realpath -m $SMLSS_DIR)"
+	mv -T "$currentsmlss" "$(realpath -m $SMLSS_DIR)"
+	echo 'done.'
+fi
 
 # Give all users in group "wheel" sudo privileges; This is necessary for yay to
 # install packages properly, and is desirable anyway.
