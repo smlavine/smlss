@@ -13,8 +13,8 @@ dpyheight=$(xdpyinfo | awk '/dimensions/ {print $2}' | cut -d'x' -f2)
 
 while getopts "cdh" o; do
 	case "$o" in
-		# Look for a URL in all three xclip selections, and choose one which
-		# has "youtu" in it, because all YT URLs have that string.
+		# Look for a URL in all three xclip selections, and choose one which has
+		# "youtu" in it, because all YT URLs have that string.
 		c) url="$(printf "$(xclip -selection p -o)\n$(xclip -selection s -o)\n$(xclip -selection c -o)" | grep youtu | head -1)" ;;
 		d) description="True" ;;
 		*) printf "USAGE: watchyt [-cd] [url]\n" && exit 2 ;;
@@ -26,6 +26,9 @@ shift $(($OPTIND - 1))
 
 # Only set the url if it isnt already set through the clipboard.
 [ "$url" ] || url="$*"
+
+# Remove any chars that are not letters, numbers, or punctuation from the url.
+url="$(echo "$url" | tr -cd '[:alnum:][:punct:]' )"
 
 if [ "$description" ]; then
 	descfile="$(mktemp watchyt.XXXXXXXX -p /tmp)"
