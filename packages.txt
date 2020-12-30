@@ -8,6 +8,7 @@ audacity
 base-devel
 bash
 bash-completion
+bind
 calc
 cdparanoia
 checkbashisms
