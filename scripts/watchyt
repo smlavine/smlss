@@ -38,6 +38,5 @@ if [ "$description" ]; then
 	exit # Don't open the video in mpv.
 fi
 
-mpv --ytdl-raw-options=format="best[height<=?$dpyheight][width<=?$dpywidth]" \
-	ytdl://"$url" &
+new mpv --ytdl-raw-options=format="best[height<=?$dpyheight][width<=?$dpywidth]" ytdl://"$url"
 
