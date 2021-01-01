@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Copyright (c) 2019-2020 Sebastian LaVine <mail@smlavine.com>
 # Licensed under the GNU GPLv3. See smlss/GPLv3.txt for details.
 
@@ -28,9 +28,9 @@ which yay && echo 'Yay already installed, skipping.' ||
 	rm -rf "$HOME/yay")
 
 # install Arch and AUR packages in packages.txt and aur-packages.txt
-# explicitly NO QUOTES here: they prevent the brace expansion from working
+# explicitly NO QUOTES here, otherwise all packages will be read as one
 echo "Installing packages. Enter your root password."
-cat $SMLSS_DIR/{aur-,}packages.txt | xargs yay -Syu --needed
+yay -Syu --needed --sudoloop $(cat $SMLSS_DIR/packages.txt $SMLSS_DIR/aur-packages.txt)
 
 # set up symlinks to config files
 mkdir  "$XDG_CONFIG_HOME"
