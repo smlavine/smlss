@@ -89,7 +89,6 @@ task
 termdown
 thunar
 thunderbird
-transmission-cli
 tree
 unrar
 unzip
