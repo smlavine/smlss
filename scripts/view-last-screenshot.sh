@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (c) 2019-2020 Sebastian LaVine <mail@smlavine.com>
+# Copyright (c) 2019-2021 Sebastian LaVine <mail@smlavine.com>
 # Licensed under the MIT license. See smlss/MIT.txt for details.
 #
 # File:        last-screenshot.sh
