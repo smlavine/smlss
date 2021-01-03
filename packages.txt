@@ -60,6 +60,7 @@ neomutt
 neovim
 nethack
 networkmanager
+newsboat
 noto-fonts-emoji
 ntfs-3g
 obs-studio
