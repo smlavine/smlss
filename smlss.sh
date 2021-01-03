@@ -19,6 +19,9 @@ fi
 echo "Modifying sudoers file. Enter your root password."
 su -c 'sed -i "s/^# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/" /etc/sudoers'
 
+echo "Installing packages. Enter your root password."
+su -c "pacman -Syu --needed archlinux-keyring; pacman -S - < $SMLSS_DIR/packages.txt"
+
 # Install Yay AUR helper, but only if it isn't already installed.
 which yay && echo 'Yay already installed, skipping.' ||
 	(git clone https://aur.archlinux.org/yay.git &&
@@ -29,8 +32,8 @@ which yay && echo 'Yay already installed, skipping.' ||
 
 # install Arch and AUR packages in packages.txt and aur-packages.txt
 # explicitly NO QUOTES here, otherwise all packages will be read as one
-echo "Installing packages. Enter your root password."
-yay -Syu --needed --sudoloop $(cat $SMLSS_DIR/packages.txt $SMLSS_DIR/aur-packages.txt)
+echo "Installing AUR packages. Enter your root password."
+yay -Syu --needed --sudoloop - < $SMLSS_DIR/aur-packages.txt
 
 # set up symlinks to config files
 mkdir  "$XDG_CONFIG_HOME"
