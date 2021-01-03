@@ -47,6 +47,7 @@ kdenlive
 lesspipe
 libreoffice-fresh
 light
+lsof
 man-db
 man-pages
 moreutils
