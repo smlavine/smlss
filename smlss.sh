@@ -14,8 +14,6 @@ if [ "$currentsmlss" != "$(realpath -m "$SMLSS_DIR")" ]; then
 	echo 'done.'
 fi
 
-# Give all users in group "wheel" sudo privileges; This is necessary for yay to
-# install packages properly, and is desirable anyway.
 echo "Modifying sudoers file. Enter your root password."
 su -c 'sed -i "s/^# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/" /etc/sudoers'
 
@@ -24,7 +22,9 @@ su -c "pacman -Syu --needed archlinux-keyring; pacman -S - < $SMLSS_DIR/packages
 
 # Install Yay AUR helper, but only if it isn't already installed.
 which yay && echo 'Yay already installed, skipping.' ||
-	(git clone https://aur.archlinux.org/yay.git &&
+	(echo "Modifying sudoers file. Enter your root password." &&
+	su -c 'sed -i "s/^# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/" /etc/sudoers' &&
+	git clone https://aur.archlinux.org/yay.git &&
 	cd "$HOME/yay" &&
 	makepkg -si &&
 	cd "$HOME" &&
