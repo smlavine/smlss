@@ -14,9 +14,6 @@ if [ "$currentsmlss" != "$(realpath -m "$SMLSS_DIR")" ]; then
 	echo 'done.'
 fi
 
-echo "Modifying sudoers file. Enter your root password."
-su -c 'sed -i "s/^# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/" /etc/sudoers'
-
 echo "Installing packages. Enter your root password."
 su -c "pacman -Syu --needed archlinux-keyring; pacman -S - < $SMLSS_DIR/packages.txt"
 
