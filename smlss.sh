@@ -56,4 +56,9 @@ do
     make install clean
 done
 
+# Remove files that were put in the home directory upon creation.
+rm .bash_history
+rm .bash_logout
+rm .bash_profile
+
 echo "smlss complete."
