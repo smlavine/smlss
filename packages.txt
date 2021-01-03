@@ -59,6 +59,7 @@ neofetch
 neomutt
 neovim
 nethack
+nethogs
 networkmanager
 newsboat
 noto-fonts-emoji
