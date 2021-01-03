@@ -61,4 +61,4 @@ rm .bash_history
 rm .bash_logout
 rm .bash_profile
 
-echo "smlss complete."
+echo "smlss.sh complete."
