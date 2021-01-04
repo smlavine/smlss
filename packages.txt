@@ -72,6 +72,7 @@ pass
 pass-otp
 pavucontrol
 pianobar
+poppler
 pulseaudio-alsa
 python
 python2
