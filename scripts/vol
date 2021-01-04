@@ -9,5 +9,5 @@
 # if there are no arguments, output the percentage volumes of left/right Master
 [ $# -eq 0 ] &&
 	amixer sget Master | grep -o '\[[0-9]*%\]' | tr -d '[]%' | paste -sd'|' ||
-# otherwise, set the audio according to the first argument
-amixer -q set Master "$1"
+	# otherwise, set the audio according to the first argument
+	amixer -q set Master "$1"
