@@ -13,20 +13,13 @@ picture_path="$HOME/Documents/pictures/screenshots/"
 file="$(mktemp)"
 xwd -root | convert xwd:- png:"$file"
 
-# read name from dmenu
-if [ "$1" = "-d" ]
-then
-	# read from /dev/null so that it doesn't block for input
-    name=$(dmenu -p "Name?" < /dev/null) 
-fi
+# read name from dmenu. Input from /dev/null so that it doesn't block for input
+[ "$1" = "-d" ] && name=$(dmenu -p "Name?" < /dev/null) 
 
 # either "-d" not used, OR dmenu cancelled out before input:
 # generate name based on time taken
-if [ "$name" = "" ]
-then
-	# example: "screenshot2019-11-17.948921698"
-	name="screenshot$(date '+%F.%N')"
-fi
+# example: "screenshot2019-11-17.948921698"
+[ -z "$name" ] && name="screenshot$(date '+%F.%N')"
 
 [ -d "$picture_path" ] && mv "$file" "$picture_path/$name.png" ||
 	mv "$file" "$HOME/$name.png"
