@@ -65,13 +65,11 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *passmenucmd[] = { "passmenu", "-m", dmenumon, "-fn", "20", "-sb", "#b00", "-l", "20", "-c", NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
     /* modifier                     key        function        argument */
     { MODKEY,                       XK_Return, spawn,          {.v = dmenucmd } },
-    { MODKEY,						XK_p,	   spawn,		   {.v = passmenucmd } },
     { MODKEY,			 			XK_space,  spawn,          {.v = termcmd } },
     { MODKEY,            			XK_r,      rotatestack,    {.i = +1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
@@ -112,6 +110,7 @@ static Key keys[] = {
     { MODKEY,						XK_n,	   spawn,		   SHCMD("toggle-music-pause.sh") },
     { MODKEY,						XK_o,	   spawn,		   SHCMD("watchyt -c") },
     { MODKEY|ShiftMask,				XK_o,	   spawn,		   SHCMD("watchyt -cd") },
+    { MODKEY,						XK_p,	   spawn,		   SHCMD("mypassmenu") },
     { MODKEY|ShiftMask,				XK_p,	   spawn,		   SHCMD("firefox --private-window") },
     { MODKEY,						XK_s,	   spawn,		   SHCMD("shoot") },
     { MODKEY,						XK_u,	   spawn,		   SHCMD("toggle-intl-key.sh") },
