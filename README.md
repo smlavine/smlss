@@ -121,7 +121,7 @@ better off forking the project and adding what you'd like on your own.
 To contact me, Sebastian LaVine, send an email to <mail@smlavine.com>.
 
 
-# FAQ (Feverishly Avoided Queries)
+# Questions
 
 Q: Why is _feature X_ broken?
 
