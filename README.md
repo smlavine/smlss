@@ -125,7 +125,7 @@ To contact me, Sebastian LaVine, send an email to <mail@smlavine.com>.
 
 Q: Why is _feature X_ broken?
 
-A: Because I broke it. Oops. Make an issue on the GitHub/GitLab page.
+A: Because I broke it. Oops. Make an issue on the GitHub page.
 
 
 Q: Can I fork or modify this project?
