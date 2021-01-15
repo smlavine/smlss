@@ -69,6 +69,7 @@ noto-fonts-emoji
 ntfs-3g
 obs-studio
 octave
+opus-tools
 pass
 pass-otp
 pavucontrol
