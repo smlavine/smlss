@@ -81,6 +81,7 @@ python2
 python-matplotlib
 python-pip
 python-sympy
+python-zita-audiotools
 qutebrowser
 redshift
 renameutils
