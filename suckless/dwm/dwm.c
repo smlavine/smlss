@@ -152,7 +152,6 @@ static void arrange(Monitor *m);
 static void arrangemon(Monitor *m);
 static void attach(Client *c);
 static void attachaside(Client *c);
-static void attachbelow(Client *c);
 static void attachstack(Client *c);
 static void buttonpress(XEvent *e);
 static void checkotherwm(void);
@@ -427,17 +426,6 @@ attach(Client *c)
 }
 
 void
-attachbelow(Client *c)
-{
-	Client *below = c->mon->clients;
-	for (; below && below->next; below = below->next);
-	if (below)
-		below->next = c;
-	else
-		c->mon->clients = c;
-}
-
-void
 attachaside(Client *c) {
 	Client *at = nexttagged(c);
 	if(!at) {
@@ -481,7 +469,7 @@ buttonpress(XEvent *e)
 			arg.ui = 1 << i;
 		} else if (ev->x < x + blw)
 			click = ClkLtSymbol;
-		else if (ev->x > selmon->ww - TEXTW(stext))
+		else if (ev->x > selmon->ww - (int)TEXTW(stext))
 			click = ClkStatusText;
 		else
 			click = ClkWinTitle;
@@ -1369,7 +1357,8 @@ resizeclient(Client *c, int x, int y, int w, int h)
 	wc.border_width = c->bw;
 	if (((nexttiled(c->mon->clients) == c && !nexttiled(c->next))
 	    || &monocle == c->mon->lt[c->mon->sellt]->arrange)
-	    && !c->isfullscreen && !c->isfloating) {
+	    && !c->isfullscreen && !c->isfloating
+	    && NULL != c->mon->lt[c->mon->sellt]->arrange) {
 		c->w = wc.width += c->bw * 2;
 		c->h = wc.height += c->bw * 2;
 		wc.border_width = 0;
@@ -1824,13 +1813,13 @@ tile(Monitor *m)
 			resize(c, m->wx, m->wy + my, mw - (2*c->bw), h - (2*c->bw), 0);
 			if (my + HEIGHT(c) < m->wh)
 				my += HEIGHT(c);
-			mfacts -= c->cfact;
+     mfacts -= c->cfact;
 		} else {
 			h = (m->wh - ty) * (c->cfact / sfacts);
 			resize(c, m->wx + mw, m->wy + ty, m->ww - mw - (2*c->bw), h - (2*c->bw), 0);
 			if (ty + HEIGHT(c) < m->wh)
 				ty += HEIGHT(c);
-			sfacts -= c->cfact;
+     sfacts -= c->cfact;
 		}
 }
 
