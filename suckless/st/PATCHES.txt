@@ -1,6 +1,6 @@
 PATCHES:
-st-dracula-0.8.2.diff
-st-scrollback-0.8.1.diff
-st-solarized-both-0.8.1.diff
-st-w3m-0.8.3.diff
+https://st.suckless.org/patches/dracula/st-dracula-0.8.2.diff
+https://st.suckless.org/patches/scrollback/st-scrollback-0.8.1.diff
+https://st.suckless.org/patches/solarized/st-solarized-both-0.8.1.diff
+https://st.suckless.org/patches/w3m/st-w3m-0.8.3.diff
 https://st.suckless.org/patches/newterm/st-newterm-0.8.2.diff
