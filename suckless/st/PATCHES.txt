@@ -5,3 +5,4 @@ https://st.suckless.org/patches/solarized/st-solarized-both-0.8.1.diff
 https://st.suckless.org/patches/w3m/st-w3m-0.8.3.diff
 https://st.suckless.org/patches/newterm/st-newterm-0.8.2.diff
 https://st.suckless.org/patches/anysize/st-anysize-0.8.1.diff
+https://st.suckless.org/patches/clipboard/st-clipboard-0.8.3.diff
