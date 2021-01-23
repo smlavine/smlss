@@ -70,11 +70,10 @@ static const char *termcmd[]  = { "st", NULL };
 static Key keys[] = {
     /* modifier                     key        function        argument */
 	{ MODKEY,                       XK_Return, spawn,          {.v = dmenucmd } },
-	{ MODKEY,			 			XK_space,  spawn,          {.v = termcmd } },
-	{ MODKEY,            			XK_r,      rotatestack,    {.i = +1 } },
+	{ MODKEY,                       XK_space,  spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_r,      rotatestack,    {.i = +1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_i,      incnmaster,     {.i = -1 } },
-	{ MODKEY|ShiftMask,				XK_BackSpace, spawn,	   SHCMD("quitdwm") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -103,20 +102,21 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	
 	/* program keybindings */
-	{ MODKEY,						XK_d,	   spawn,		   SHCMD("mycmus") },
-	{ MODKEY,						XK_f,	   spawn,		   SHCMD("firefox") },
-	{ MODKEY|ShiftMask,				XK_h,	   spawn,		   SHCMD("st -e htop") },
-	{ MODKEY,						XK_m,	   spawn,		   SHCMD("st -e cmus") },
-	{ MODKEY,						XK_n,	   spawn,		   SHCMD("pausemusic") },
-	{ MODKEY,						XK_o,	   spawn,		   SHCMD("watchyt -c") },
-	{ MODKEY|ShiftMask,				XK_o,	   spawn,		   SHCMD("watchyt -cd") },
-	{ MODKEY,						XK_p,	   spawn,		   SHCMD("mypassmenu") },
-	{ MODKEY|ShiftMask,				XK_p,	   spawn,		   SHCMD("firefox --private-window") },
-	{ MODKEY,						XK_s,	   spawn,		   SHCMD("shoot") },
-	{ MODKEY,						XK_u,	   spawn,		   SHCMD("intlkey") },
-	{ MODKEY,                       XK_v,      spawn,          SHCMD("vol 5%-") },
-	{ MODKEY|ShiftMask,             XK_v,      spawn,          SHCMD("vol 5%+") },
-	{ MODKEY,                       XK_y,      spawn,          SHCMD("lastscreenshot") },
+    { MODKEY,                       XK_d,      spawn,          SHCMD("mycmus") },
+    { MODKEY,                       XK_f,      spawn,          SHCMD("firefox") },
+    { MODKEY|ShiftMask,             XK_h,      spawn,          SHCMD("st -e htop") },
+    { MODKEY,                       XK_m,      spawn,          SHCMD("st -e cmus") },
+    { MODKEY,                       XK_n,      spawn,          SHCMD("pausemusic") },
+    { MODKEY,                       XK_o,      spawn,          SHCMD("watchyt -c") },
+    { MODKEY|ShiftMask,             XK_o,      spawn,          SHCMD("watchyt -cd") },
+    { MODKEY,                       XK_p,      spawn,          SHCMD("mypassmenu") },
+    { MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("firefox --private-window") },
+    { MODKEY|ShiftMask,             XK_BackSpace, spawn,       SHCMD("quitdwm") },
+    { MODKEY,                       XK_s,      spawn,          SHCMD("shoot") },
+    { MODKEY,                       XK_u,      spawn,          SHCMD("intlkey") },
+    { MODKEY,                       XK_v,      spawn,          SHCMD("vol 5%-") },
+    { MODKEY|ShiftMask,             XK_v,      spawn,          SHCMD("vol 5%+") },
+    { MODKEY,                       XK_y,      spawn,          SHCMD("lastscreenshot") },
 };
 
 /* button definitions */
