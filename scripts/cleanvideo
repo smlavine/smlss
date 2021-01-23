@@ -2,7 +2,7 @@
 # Copyright (c) 2020-2021 Sebastian LaVine <mail@smlavine.com>
 # Licensed under the MIT license. See smlss/MIT.txt for details.
 #
-# File:        clean-video
+# File:        cleanvideo
 # Description: Filters some background noise from a video; optionally converts
 #              the format.
 

@@ -74,7 +74,7 @@ static Key keys[] = {
     { MODKEY,            			XK_r,      rotatestack,    {.i = +1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_i,      incnmaster,     {.i = -1 } },
-    { MODKEY|ShiftMask,				XK_BackSpace, spawn,	   SHCMD("dmenu-quit-dwm.sh") },
+    { MODKEY|ShiftMask,				XK_BackSpace, spawn,	   SHCMD("quitdwm") },
     { MODKEY,                       XK_b,      togglebar,      {0} },
     { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
     { MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -103,20 +103,20 @@ static Key keys[] = {
     TAGKEYS(                        XK_9,                      8)
 
     /* program keybindings */
-    { MODKEY,						XK_d,	   spawn,		   SHCMD("current-cmus.sh") },
+    { MODKEY,						XK_d,	   spawn,		   SHCMD("mycmus") },
     { MODKEY,						XK_f,	   spawn,		   SHCMD("firefox") },
     { MODKEY|ShiftMask,				XK_h,	   spawn,		   SHCMD("st -e htop") },
     { MODKEY,						XK_m,	   spawn,		   SHCMD("st -e cmus") },
-    { MODKEY,						XK_n,	   spawn,		   SHCMD("toggle-music-pause.sh") },
+    { MODKEY,						XK_n,	   spawn,		   SHCMD("pausemusic") },
     { MODKEY,						XK_o,	   spawn,		   SHCMD("watchyt -c") },
     { MODKEY|ShiftMask,				XK_o,	   spawn,		   SHCMD("watchyt -cd") },
     { MODKEY,						XK_p,	   spawn,		   SHCMD("mypassmenu") },
     { MODKEY|ShiftMask,				XK_p,	   spawn,		   SHCMD("firefox --private-window") },
     { MODKEY,						XK_s,	   spawn,		   SHCMD("shoot") },
-    { MODKEY,						XK_u,	   spawn,		   SHCMD("toggle-intl-key.sh") },
+    { MODKEY,						XK_u,	   spawn,		   SHCMD("intlkey") },
     { MODKEY,                       XK_v,      spawn,          SHCMD("vol 5%-") },
     { MODKEY|ShiftMask,             XK_v,      spawn,          SHCMD("vol 5%+") },
-	{ MODKEY,                       XK_y,      spawn,          SHCMD("view-last-screenshot.sh") },
+	{ MODKEY,                       XK_y,      spawn,          SHCMD("lastscreenshot") },
 };
 
 /* button definitions */

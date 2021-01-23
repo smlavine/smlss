@@ -2,7 +2,7 @@
 # Copyright (c) 2019-2021 Sebastian LaVine <mail@smlavine.com>
 # Licensed under the MIT license. See smlss/MIT.txt for details.
 #
-# File:        current-cmus.sh
+# File:        mycmus
 # Description: Transmits info of current song playing in cmus using dmenu.
 
 get_value()
