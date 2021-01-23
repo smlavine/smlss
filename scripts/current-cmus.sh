@@ -7,7 +7,7 @@
 
 get_value()
 {
-	echo "$(cmus-remote -C status | grep -o "$1.*$" | cut -d' ' -f2-)"
+	echo "$(cmus-remote -C status | grep "^tag $1" | cut -d' ' -f3-)"
 }
 
 artist="$(get_value artist)"
