@@ -96,6 +96,7 @@ task
 termdown
 thunar
 thunderbird
+traceroute
 tree
 unrar
 unzip
