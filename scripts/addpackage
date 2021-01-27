@@ -28,7 +28,7 @@ echo -e "$packages" >> $file &&
 # Change newlines to commas to make the list presentable for a git commit
 packages="$(echo $packages | sed 's/\\n/, /g')"
 
-commitmsg="[$file] Add $packages"
+commitmsg="$file: Add $packages"
 # Remove trailing comma from package list
 commitmsg="$(echo $commitmsg | sed 's/,$//')"
 
