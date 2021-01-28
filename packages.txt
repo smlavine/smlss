@@ -38,6 +38,7 @@ handbrake
 handbrake-cli
 htop
 id3v2
+iftop
 imagemagick
 jdk8-openjdk
 jdk-openjdk
@@ -62,6 +63,7 @@ neofetch
 neomutt
 neovim
 nethack
+nethogs
 nethogs
 networkmanager
 newsboat
