@@ -13,6 +13,7 @@ bind
 calc
 cdparanoia
 checkbashisms
+clang
 cmus
 cowsay
 dash
@@ -89,6 +90,7 @@ renameutils
 rsync
 rustup
 sdl2_gfx
+sdl2_mixer
 sdl_mixer
 sl
 slop
