@@ -9,8 +9,8 @@ preserved. This file is offered as-is, without any warranty.
 
 smlss.sh is licensed under the
 [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html), which can be found in
-smlss/GPLv3.  Files in the scripts/ directory are individually licensed under
-either the MIT license (which can be found in smlss/MIT.txt) or under the GPLv3.
+GPLv3.txt.  Files in the scripts/ directory are individually licensed under
+either the MIT license (which can be found in MIT.txt) or under the GPLv3.
 See the copyright notice at the head of each file for details.
 
 The files scripts/extract and scripts/dmenurecord were originally written by
