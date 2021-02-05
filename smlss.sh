@@ -49,6 +49,10 @@ ln -sfT "$SMLSS_DIR/dots/default.pa"         "$XDG_CONFIG_HOME/pulse/default.pa"
 [ -d "$XDG_CONFIG_HOME/pianobar" ] || (mkdir "$XDG_CONFIG_HOME/pianobar" &&
 	mkfifo "$XDG_CONFIG_HOME/pianobar/ctl")
 
+# Create this directory which is required for the status bar (and potentially
+# other things) to operate.
+mkdir "$SMLSS_DATA_DIR"
+
 # install suckless programs (dwm, st, etc.)
 for item in $(ls -A1 "$SMLSS_DIR/suckless")
 do
