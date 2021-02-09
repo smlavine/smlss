@@ -16,6 +16,8 @@ checkbashisms
 clang
 cmus
 cowsay
+cups
+cups-pdf
 dash
 dateutils
 ddrescue
