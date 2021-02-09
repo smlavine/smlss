@@ -30,6 +30,7 @@ fceux
 ffmpeg
 firefox
 flex
+foomatic-db-gutenprint-ppds
 fzf
 gdb
 gimp
@@ -37,6 +38,7 @@ git
 gnuchess
 go
 gthumb
+gutenprint
 handbrake
 handbrake-cli
 htop
