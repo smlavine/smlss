@@ -13,19 +13,6 @@ GPLv3.txt.  Files in the scripts/ directory are individually licensed under
 either the MIT license (which can be found in MIT.txt) or under the GPLv3.
 See the copyright notice at the head of each file for details.
 
-The files scripts/extract and scripts/dmenurecord were originally written by
-[Luke Smith](lukesmith.xyz), and are licensed under the GPLv3.
-
-The file dots/.bash\_completion was originally written by
-[cykerway](https://github.com/cykerway), and is licensed under the GPLv3.
-
-The files dots/nvim/{ftdetect, syntax}/gcode.vim were original written by
-[Dave Eno](https://www.vim.org/scripts/script.php?script_id=4910) and
-improved by [wilriker](https://github.com/wilriker/gcode.vim), and are licensed
-under the MIT license.
-
-See the LICENSE files in the directories of the suckless programs (located in
-the suckless/ directory) for their copyright information.
 
 # About
 
@@ -119,6 +106,23 @@ commits immediately after to fix them. Someday I will probably learn how to
 properly test things, but until that day, I hope that this reset helped to keep
 the repository relatively lean, as I now am much more careful about the files
 that are tracked in the repository.
+
+
+# Contrib
+
+The files scripts/extract and scripts/dmenurecord were originally written by
+[Luke Smith](lukesmith.xyz), and are licensed under the GPLv3.
+
+The file dots/.bash\_completion was originally written by
+[cykerway](https://github.com/cykerway), and is licensed under the GPLv3.
+
+The files dots/nvim/{ftdetect, syntax}/gcode.vim were original written by
+[Dave Eno](https://www.vim.org/scripts/script.php?script_id=4910) and
+improved by [wilriker](https://github.com/wilriker/gcode.vim), and are licensed
+under the MIT license.
+
+See the LICENSE files in the directories of the suckless programs (located in
+the suckless/ directory) for their copyright information.
 
 
 # Contact
