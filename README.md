@@ -43,29 +43,6 @@ goal of smlss is for it to be as drop-in as possible, it is entirely possible
 that if you go in expecting a seamless experience,
 [you're gonna have a bad time.](https://smlavine.com/images/sans.jpg)
 
-# OLD-HISTORY
-
-I first began smlss in February of 2019, primarily inspired by Luke Smith's
-[LARBS](https://larbs.xyz) project. I knew almost nothing about Git, or how to
-use it, and so I used it poorly. In particular, I made the mistake of putting
-several large binaries and archives into the repository. While I did correctly
-abandon this practice early on, these files remained in the history of the repo,
-and, as I had long since deleted all of the files, it was an extreme pain to get
-rid of them all. So, in July of 2020 I decided to delete the old smlss
-repository and start anew. This had the upside of deleting all bloated files
-trapped in the repository like flies in amber, but had the downside of deleting
-all the commit history from the project. OLD-HISTORY is the output of
-```git log```
-before I deleted the old repository.
-
-I still barely know how to use Git -- I only use one master branch, and I
-sometimes push things without realizing they are broken, and then just push
-commits immediately after to fix them. Someday I will probably learn how to 
-properly test things, but until that day, I hope that this reset helped to keep
-the repository relatively lean, as I now am much more careful about the files
-that are tracked in the repository.
-
-
 # How to use smlss
 
 1. Install Arch Linux. smlss does not do anything that it expects you would
@@ -119,6 +96,29 @@ Is there something that you'd like to see smlss do, that it currently doesn't?
 Make an issue, or submit a pull request! Keep in mind, however, that I use
 smlss myself, and so if a feature doesn't suit me personally, you might be
 better off forking the project and adding what you'd like on your own.
+
+
+# OLD-HISTORY
+
+I first began smlss in February of 2019, primarily inspired by Luke Smith's
+[LARBS](https://larbs.xyz) project. I knew almost nothing about Git, or how to
+use it, and so I used it poorly. In particular, I made the mistake of putting
+several large binaries and archives into the repository. While I did correctly
+abandon this practice early on, these files remained in the history of the repo,
+and, as I had long since deleted all of the files, it was an extreme pain to get
+rid of them all. So, in July of 2020 I decided to delete the old smlss
+repository and start anew. This had the upside of deleting all bloated files
+trapped in the repository like flies in amber, but had the downside of deleting
+all the commit history from the project. OLD-HISTORY is the output of
+```git log```
+before I deleted the old repository.
+
+I still barely know how to use Git -- I only use one master branch, and I
+sometimes push things without realizing they are broken, and then just push
+commits immediately after to fix them. Someday I will probably learn how to 
+properly test things, but until that day, I hope that this reset helped to keep
+the repository relatively lean, as I now am much more careful about the files
+that are tracked in the repository.
 
 
 # Contact
