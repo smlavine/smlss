@@ -19,6 +19,11 @@ The files scripts/extract and scripts/dmenurecord were originally written by
 The file dots/.bash\_completion was originally written by
 [cykerway](https://github.com/cykerway), and is licensed under the GPLv3.
 
+The files dots/nvim/{ftdetect, syntax}/gcode.vim were original written by
+[Dave Eno](https://www.vim.org/scripts/script.php?script_id=4910) and
+improved by [wilriker](https://github.com/wilriker/gcode.vim), and are licensed
+under the MIT license.
+
 See the LICENSE files in the directories of the suckless programs (located in
 the suckless/ directory) for their copyright information.
 
