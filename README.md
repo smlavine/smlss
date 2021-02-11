@@ -43,7 +43,7 @@ goal of smlss is for it to be as drop-in as possible, it is entirely possible
 that if you go in expecting a seamless experience,
 [you're gonna have a bad time.](https://smlavine.com/images/sans.jpg)
 
-## OLD-HISTORY
+# OLD-HISTORY
 
 I first began smlss in February of 2019, primarily inspired by Luke Smith's
 [LARBS](https://larbs.xyz) project. I knew almost nothing about Git, or how to
