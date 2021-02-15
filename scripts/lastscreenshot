@@ -3,9 +3,14 @@
 # Licensed under the MIT license. See smlss/MIT.txt for details.
 #
 # File:        lastscreenshot
-# Description: Opens the last screenshot taken in sxiv.
+# Description: Opens the last screenshot taken in sxiv, and queues all previous
+#              screenshots to be viewed.
 
 # Directory containing the screenshots.
 screenshot_path="$HOME/Documents/pictures/screenshots/"
 
-sxiv "$screenshot_path/$(ls -t1 "$screenshot_path" | head -1)"
+cd "$screenshot_path"
+
+sxiv $(ls -A1t)
+
+cd -
