@@ -111,12 +111,12 @@ static Key keys[] = {
     { MODKEY|ShiftMask,             XK_o,      spawn,          SHCMD("watchyt -cd") },
     { MODKEY,                       XK_p,      spawn,          SHCMD("mypassmenu") },
     { MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("firefox --private-window") },
-    { MODKEY|ShiftMask,             XK_BackSpace, spawn,       SHCMD("quitdwm") },
     { MODKEY,                       XK_s,      spawn,          SHCMD("shoot") },
     { MODKEY,                       XK_u,      spawn,          SHCMD("intlkey") },
     { MODKEY,                       XK_v,      spawn,          SHCMD("vol 5%-") },
     { MODKEY|ShiftMask,             XK_v,      spawn,          SHCMD("vol 5%+") },
     { MODKEY,                       XK_y,      spawn,          SHCMD("lastscreenshot") },
+    { MODKEY|ShiftMask,             XK_BackSpace, spawn,       SHCMD("quitdwm") },
 };
 
 /* button definitions */
