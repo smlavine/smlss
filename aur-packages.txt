@@ -9,4 +9,5 @@ multimc5
 pandoc-bin
 protonvpn-cli-ng
 streamlink-twitch-gui
+tuxi-git
 webcamoid
