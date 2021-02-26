@@ -8,6 +8,12 @@
 #              -d	Open the video description in less. (don't launch mpv)
 # Arguments:   URL of the video to watch
 
+usage()
+{
+	printf "USAGE: watchyt [-cd] [url]\n"
+	exit 1
+}
+
 dpywidth=$(xdpyinfo | awk '/dimensions/ {print $2}' | cut -d'x' -f1)
 dpyheight=$(xdpyinfo | awk '/dimensions/ {print $2}' | cut -d'x' -f2)
 
@@ -15,7 +21,7 @@ while getopts "cdh" o; do
 	case "$o" in
 		c) url="$(xclip -selection c -o)" ;;
 		d) description="True" ;;
-		*) printf "USAGE: watchyt [-cd] [url]\n" && exit 2 ;;
+		*) usage ;;
 	esac
 done
 
