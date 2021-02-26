@@ -28,15 +28,14 @@ done
 # I didn't know this existed until I read the getopts man page. It's useful!
 shift $(($OPTIND - 1))
 
-# If there are no arguments, obtain the url as a ytsearch from a dmenu prompt;
-# otherwise if the url isn't already set (by clipboard), then set the URL from
-# the arguments.
-if [ "$#" -eq 0 ]; then
-	URL_PREFIX="ytsearch:"
-	url="$(dmenu -p 'Search for:' </dev/null)"
-	[ "$url" ] && url="$URL_PREFIX$url"
-elif [ -z "$url" ]; then
-	url="$*"
+if [ -z "$url" ]; then
+	if [ "$#" -eq 0 ]; then
+		URL_PREFIX="ytsearch:"
+		url="$(dmenu -p 'Search for:' </dev/null)"
+		[ "$url" ] && url="$URL_PREFIX$url"
+	else
+		url="$*"
+	fi
 fi
 
 # Remove any chars that are not letters, numbers, or punctuation from the url.
