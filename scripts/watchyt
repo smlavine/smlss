@@ -37,5 +37,5 @@ if [ "$description" ]; then
 fi
 
 mpv --ytdl-raw-options=format="best[height<=?$dpyheight][width<=?$dpywidth]" \
-	ytdl://"$url" &
+	ytdl://"$url"
 
