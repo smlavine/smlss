@@ -2,6 +2,7 @@ audiotools
 brave-bin
 brogue-ce
 chatterino2-git
+fontpreview-ueberzug-git
 godot
 gtkcord3
 libxft-bgra
