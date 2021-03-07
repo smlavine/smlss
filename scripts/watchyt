@@ -28,7 +28,14 @@ done
 # I didn't know this existed until I read the getopts man page. It's useful!
 shift $(($OPTIND - 1))
 
-if [ -z "$url" ]; then
+# if there is already a url, then it came from the xclip clipboard. Firefox
+# removes text clipped from it if it closes, so re-write url to the xclip
+# clipboard to counteract this.
+# if there isn't already a url and there is no argument, get a url through a
+# dmenu prompt.
+if [ "$url" ]; then
+	echo "$url" | xclip -selection c -i
+else
 	if [ "$#" -eq 0 ]; then
 		URL_PREFIX="ytsearch:"
 		url="$(dmenu -p 'Search for:' </dev/null)"
