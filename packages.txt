@@ -33,6 +33,7 @@ flex
 foomatic-db-gutenprint-ppds
 fzf
 gdb
+gifsicle
 gimp
 git
 gnuchess
