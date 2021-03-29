@@ -1,11 +1,15 @@
 #!/bin/sh
-# A general, all-purpose extraction script.
-#
-# Default behavior: Extract archive into new directory
-# Behavior with `-c` option: Extract contents into current directory
-#
-# Written by Luke Smith, modified by Sebastian LaVine.
+# Copyright (c) 2019 Luke Smith <github.com/lukesmithxyz>
+# Copyright (c) 2021 Sebastian LaVine <mail@smlavine.com>
+# Originally written by Luke Smith for his dotfiles and improved by Sebastian
+# LaVine.
 # Licensed under the GNU GPLv3. See smlss/GPLv3.txt for details.
+#
+# File: extract
+# Description: A general, all-purpose extraction script. By default, the
+#              archive is extracted into a new directory.
+# Options:     -c	Extract contents into current directory.
+# Arguments:   path to archive
 
 
 while getopts "hc" o; do case "${o}" in
@@ -26,8 +30,9 @@ fi
 
 if [ -f "$archive" ] ; then
         case "$archive" in
-                *.tar.bz2|*.tar.xz|*.tbz2) tar xvjf "$archive" ;;
+                *.tar.bz2|*.tbz2) tar xvjf "$archive" ;;
                 *.tar.gz|*.tgz) tar xvzf "$archive" ;;
+                *.tar.xz|*.txz) tar xvJf "$archive" ;;
                 *.lzma) unlzma "$archive" ;;
                 *.bz2) bunzip2 "$archive" ;;
                 *.rar) unrar x -ad "$archive" ;;
