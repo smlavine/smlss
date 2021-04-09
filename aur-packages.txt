@@ -1,6 +1,7 @@
 audiotools
 brave-bin
 brogue-ce
+catgirl
 chatterino2-git
 fontpreview-ueberzug-git
 godot
