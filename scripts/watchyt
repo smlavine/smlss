@@ -53,7 +53,9 @@ url="$(echo -n "$url" | tr -cd '[:alnum:][:punct:]' )"
 
 if [ "$description" ]; then
 	descfile="$(mktemp watchyt.XXXXXXXX -p /tmp)"
-	youtube-dl --get-description "$url" > "$descfile"
+	youtube-dl --get-title "$url" >> "$descfile"
+	printf "$url\n\n" >> "$descfile"
+	youtube-dl --get-description "$url" >> "$descfile"
 	st -e less "$descfile"
 	rm "$descfile" # Once less is closed, then delete file.
 	exit # Don't open the video in mpv.
