@@ -36,6 +36,7 @@ gdb
 gifsicle
 gimp
 git
+git-filter-repo
 gnuchess
 go
 gthumb
