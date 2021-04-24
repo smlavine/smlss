@@ -1,4 +1,5 @@
 audiotools
+autojump-rs
 brave-bin
 brogue-ce
 catgirl
