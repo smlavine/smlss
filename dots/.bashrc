@@ -53,6 +53,8 @@ unset HISTFILE
 # enable vi editing mode
 set -o vi
 
+[ -s /etc/profile.d/autojump.sh ] && source /etc/profile.d/autojump.sh
+
 # make it so you only need to press tab once to show autocomplete options, and
 # make autocomplete case-insensitive
 bind 'set show-all-if-ambiguous on'
