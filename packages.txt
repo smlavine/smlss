@@ -124,4 +124,5 @@ xorg-xinit
 youtube-dl
 zathura
 zathura-pdf-poppler
+zenity
 zip
