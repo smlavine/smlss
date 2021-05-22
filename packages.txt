@@ -16,6 +16,7 @@ checkbashisms
 clang
 cmus
 cowsay
+ctags
 cups
 cups-pdf
 dash
