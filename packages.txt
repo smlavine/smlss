@@ -24,6 +24,7 @@ ddrescue
 dhclient
 diffutils
 dmraid
+dunst
 ecryptfs-utils
 ed
 fceux
