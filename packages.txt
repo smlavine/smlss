@@ -109,6 +109,7 @@ termdown
 thunar
 thunderbird
 tor
+torbrowser-launcher
 torsocks
 traceroute
 tree
