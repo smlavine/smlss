@@ -57,7 +57,7 @@ mkdir "$SMLSS_DATA_DIR"
 for item in $(ls -A1 "$SMLSS_DIR/suckless")
 do
 	cd "$SMLSS_DIR/suckless/$item"
-    make install clean
+	make install clean
 done
 
 # Remove files that were put in the home directory upon creation.
