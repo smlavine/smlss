@@ -99,6 +99,7 @@ rsync
 rustup
 sdl2_gfx
 sdl2_mixer
+sdl2_ttf
 sdl_mixer
 sl
 slop
