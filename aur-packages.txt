@@ -11,6 +11,7 @@ libxft-bgra
 multimc5
 pandoc-bin
 protonvpn-cli-ng
+scalc
 streamlink-twitch-gui
 tabbed
 tuxi-git
