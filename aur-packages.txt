@@ -10,7 +10,7 @@ gtkcord3
 libxft-bgra
 multimc5
 pandoc-bin
-protonvpn-cli-ng
+protonvpn-cli
 scalc
 streamlink-twitch-gui
 tabbed
